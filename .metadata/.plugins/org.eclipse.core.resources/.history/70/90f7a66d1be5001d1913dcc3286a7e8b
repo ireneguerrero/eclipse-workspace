@@ -40,7 +40,6 @@ public class Main {
 					cols.put("email", email);
 					cols.put("nombre", nombre);
 					cols.put("password", contrasena);
-					cols.put("telefono", telefono);
 					DAO.insertar("cliente", cols);
 				} catch (SQLException e) {
 					e.printStackTrace();

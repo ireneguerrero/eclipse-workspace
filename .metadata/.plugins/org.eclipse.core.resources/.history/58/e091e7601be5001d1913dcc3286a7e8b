@@ -36,11 +36,10 @@ public class Main {
 				int telefono = Integer.parseInt(sc.nextLine());
 
 				try {
-					HashMap<String, Object> cols = new HashMap<String, Object>();
+					HashMap<String, String> cols = new HashMap<String, String>();
 					cols.put("email", email);
 					cols.put("nombre", nombre);
 					cols.put("password", contrasena);
-					cols.put("telefono", telefono);
 					DAO.insertar("cliente", cols);
 				} catch (SQLException e) {
 					e.printStackTrace();

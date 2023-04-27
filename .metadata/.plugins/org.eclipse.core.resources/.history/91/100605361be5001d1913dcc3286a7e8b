@@ -47,10 +47,11 @@ public abstract class DAO {
 		while (it.hasNext()) {
 			Object elemento = it.next();
 			if (elemento.getClass() != String.class && elemento.getClass() != Character.class) {
-				consulta += elemento + ",";
+
 			} else {
 				consulta += "'" + (String) elemento + "',";
 			}
+			consulta += "'" + (String) elemento + "',";
 		}
 		consulta = consulta.substring(0, consulta.length() - 1);
 		consulta += ")";

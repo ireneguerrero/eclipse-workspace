@@ -51,6 +51,7 @@ public abstract class DAO {
 			} else {
 				consulta += "'" + (String) elemento + "',";
 			}
+			consulta += "'" + (String) elemento + "',";
 		}
 		consulta = consulta.substring(0, consulta.length() - 1);
 		consulta += ")";
