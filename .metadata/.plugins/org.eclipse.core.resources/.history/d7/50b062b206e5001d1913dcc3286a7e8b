@@ -66,7 +66,7 @@ public class Main {
 				try {
 					ArrayList<Object> cliente = DAO.consultar("select * from cliente");
 					for (byte i = 0; i < cliente.size(); i++) {
-						System.out.print(cliente.get(i) + " : ");
+						System.out.println(cliente.get(i) + " : ");
 					}
 					System.out.println();
 				} catch (SQLException e) {

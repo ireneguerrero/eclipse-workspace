@@ -8,7 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.Map.Entry;
 
 public abstract class DAO {
@@ -69,31 +68,28 @@ public abstract class DAO {
 		desconectar(smt);
 		return ret;
 	}
+	
+	public static ArrayList<Object> consultar(String query){
+		try {
+//			conectamos
+			Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bicicletasdaw", "root", "");
+			Statement smt = c.createStatement();
+//			hacemos consulta
+			ResultSet cursor = smt.executeQuery("select * from cliente");
+			while (cursor.next()) {
+				String emailQ = cursor.getString(cursor.findColumn("email"));
+				String passQ = cursor.getString(cursor.findColumn("password"));
+				int tlfQ = cursor.getInt(cursor.findColumn("telefono"));
+				String nombreQ = cursor.getString(cursor.findColumn("nombre"));
 
-	public static ArrayList<Object> consultar(String tabla, LinkedHashSet<String> columnasSelect,
-			HashMap<String, String> restricciones) throws SQLException {
-		Statement smt = conectar();
-		String query = "select ";
-		Iterator ith = columnasSelect.iterator();
-		while (ith.hasNext()) {
-			query += (String) ith.next() + ",";
-
+				System.out.println(emailQ + " : " + nombreQ + " : " + passQ + " : " + tlfQ);
+			}
+//			desconectamos
+			smt.close();
+			c.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
-		ResultSet cursor = smt.executeQuery(query);
-		ArrayList<Object> fila = new ArrayList<Object>();
-		while (cursor.next()) {
-			String emailQ = cursor.getString(cursor.findColumn("email"));
-			String passQ = cursor.getString(cursor.findColumn("password"));
-			int tlfQ = cursor.getInt(cursor.findColumn("telefono"));
-			String nombreQ = cursor.getString(cursor.findColumn("nombre"));
-
-			fila.add(emailQ);
-			fila.add(passQ);
-			fila.add(tlfQ);
-			fila.add(nombreQ);
-		}
-		desconectar(smt);
-		return fila;
 	}
 
 }

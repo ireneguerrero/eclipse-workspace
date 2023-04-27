@@ -7,8 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.LinkedHashSet;
 import java.util.Map.Entry;
 
 public abstract class DAO {
@@ -70,15 +70,10 @@ public abstract class DAO {
 		return ret;
 	}
 
-	public static ArrayList<Object> consultar(String tabla, LinkedHashSet<String> columnasSelect,
+	public static ArrayList<Object> consultar(String tabla, HashSet<String> columnasSelect,
 			HashMap<String, String> restricciones) throws SQLException {
 		Statement smt = conectar();
-		String query = "select ";
-		Iterator ith = columnasSelect.iterator();
-		while (ith.hasNext()) {
-			query += (String) ith.next() + ",";
-
-		}
+		String query = "select * from " + tabla + (restricciones.size() > 0 ? " where " : "");
 		ResultSet cursor = smt.executeQuery(query);
 		ArrayList<Object> fila = new ArrayList<Object>();
 		while (cursor.next()) {

@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -64,11 +63,20 @@ public class Main {
 				break;
 			case 4:
 				try {
-					ArrayList<Object> cliente = DAO.consultar("select * from cliente");
-					for (byte i = 0; i < cliente.size(); i++) {
-						System.out.print(cliente.get(i) + " : ");
+//					conectamos
+					Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bicicletasdaw", "root", "");
+					Statement smt = c.createStatement();
+//					hacemos consulta
+					ResultSet cursor = smt.executeQuery("select * from cliente");
+					while (cursor.next()) {
+						String emailQ = cursor.getString(cursor.findColumn("email"));
+						String passQ = cursor.getString(cursor.findColumn("password"));
+						int tlfQ = cursor.getInt(cursor.findColumn("telefono"));
+						String nombreQ = cursor.getString(cursor.findColumn("nombre"));
 					}
-					System.out.println();
+//					desconectamos
+					smt.close();
+					c.close();
 				} catch (SQLException e) {
 					e.printStackTrace();
 				}
