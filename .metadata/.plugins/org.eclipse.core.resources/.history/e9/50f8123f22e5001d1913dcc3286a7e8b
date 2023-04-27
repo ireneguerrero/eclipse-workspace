@@ -147,7 +147,6 @@ public abstract class DAO {
 		query = query.substring(0, query.length() - 5);
 
 		Statement smt = conectar();
-		System.out.println(query);
 		int ret = smt.executeUpdate(query);
 		desconectar(smt);
 
