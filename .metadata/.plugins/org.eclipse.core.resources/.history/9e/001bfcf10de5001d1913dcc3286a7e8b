@@ -73,21 +73,13 @@ public abstract class DAO {
 	public static ArrayList<Object> consultar(String tabla, LinkedHashSet<String> columnasSelect,
 			HashMap<String, String> restricciones) throws SQLException {
 		Statement smt = conectar();
-		
 		String query = "select ";
 		Iterator ith = columnasSelect.iterator();
 		while (ith.hasNext()) {
 			query += (String) ith.next() + ",";
-		}
-		query = query.substring(0, query.length() - 1) + " from " + tabla + (restricciones.size() > 0 ? " where " : "");
-		
-		Iterator itm = restricciones.entrySet().iterator();
-		while (itm.hasNext()) {
-			Entry actual = (Entry) itm.next();
-			query += (String) actual.getKey() + "='" + (String) actual.getValue() + "' and ";
 
 		}
-		
+		query = query.substring(0, query.length() - 1) + " from " + tabla + (restricciones.size() > 0 ? " where " : "");
 		ResultSet cursor = smt.executeQuery(query);
 		ArrayList<Object> fila = new ArrayList<Object>();
 		while (cursor.next()) {
