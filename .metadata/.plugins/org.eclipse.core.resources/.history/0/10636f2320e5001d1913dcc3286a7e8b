@@ -98,6 +98,7 @@ public abstract class DAO {
 			} else {
 				query += (String) actual.getKey() + "='" + (String) actual.getValue() + "' and ";
 			}
+
 		}
 		if (restricciones.size() > 0) {
 			query = query.substring(0, query.length() - 5);
@@ -122,34 +123,7 @@ public abstract class DAO {
 	}
 
 	public static int actualizar(String tabla, HashMap<String, Object> datosAModificar,
-			HashMap<String, Object> restricciones) throws SQLException {
-		String query = "update " + tabla + " set ";
-		Iterator itm = datosAModificar.entrySet().iterator();
-		while (itm.hasNext()) {
-			Entry actual = (Entry) itm.next();
-			if (actual.getValue().getClass() != String.class && actual.getValue().getClass() != Character.class) {
-				query += actual.getKey() + " = " + actual.getValue() + ",";
-			} else {
-				query += actual.getKey() + " = '" + actual.getValue() + "',";
-			}
-		}
-		query = query.substring(0, query.length() - 1) + " where ";
+			HashMap<String, Object> restricciones) {
 
-		Iterator itr = restricciones.entrySet().iterator();
-		while (itr.hasNext()) {
-			Entry actual = (Entry) itr.next();
-			if (actual.getValue().getClass() != String.class && actual.getValue().getClass() != Character.class) {
-				query += actual.getKey() + " = " + actual.getValue() + " and ";
-			} else {
-				query += actual.getKey() + " = '" + actual.getValue() + "' and ";
-			}
-		}
-		query = query.substring(0, query.length() - 5);
-
-		Statement smt = conectar();
-		int ret = smt.executeUpdate(query);
-		desconectar(smt);
-
-		return ret;
 	}
 }

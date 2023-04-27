@@ -51,7 +51,7 @@ public class Main {
 				System.out.println("Dime el email de la persona a borrar");
 				String emailABorrar = sc.nextLine();
 				try {
-					HashMap<String, Object> columnasBorrar = new HashMap<String, Object>();
+					HashMap<String, String> columnasBorrar = new HashMap<String, String>();
 					columnasBorrar.put("email", emailABorrar);
 					if (DAO.borrar("cliente", columnasBorrar) == 0) {
 						System.out.println("No se ha podido borrar: El email no existía");
@@ -63,29 +63,7 @@ public class Main {
 				}
 				break;
 			case 3:
-				System.out.println("Dime el email del cliente a modificar");
-				String emailMod = sc.nextLine();
-				HashMap<String, Object> valoresNuevos = new HashMap<String, Object>();
-				System.out.println("¿Qué quieres cambiar?" + "\n\t1 - Email" + "\n\t2 - Nombre" + "\n\t3 - Password"
-						+ "\n\t4 - Teléfono");
-				switch (Byte.parseByte(sc.nextLine())) {
-				case 1:
-					System.out.println("Dime el nuevo email");
-					valoresNuevos.put("email", sc.nextLine());
-					break;
-				case 2:
-					System.out.println("Dime el nuevo nombre");
-					valoresNuevos.put("nombre", sc.nextLine());
-					break;
-				case 3:
-					System.out.println("Dime el nuevo password");
-					valoresNuevos.put("password", sc.nextLine());
-					break;
-				case 4:
-					System.out.println("Dime el nuevo teléfono");
-					valoresNuevos.put("telefono", Integer.parseInt(sc.nextLine()));
-					break;
-				}
+
 				break;
 			case 4:
 				try {
@@ -94,7 +72,7 @@ public class Main {
 					columnasSacar.add("password");
 					columnasSacar.add("telefono");
 					columnasSacar.add("nombre");
-					HashMap<String, Object> restricciones = new HashMap<String, Object>();
+					HashMap<String, String> restricciones = new HashMap<String, String>();
 					ArrayList<Object> cliente = DAO.consultar("cliente", columnasSacar, restricciones);
 					for (byte i = 0; i < cliente.size(); i++) {
 						System.out.print(cliente.get(i) + " : ");
