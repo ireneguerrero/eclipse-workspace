@@ -86,13 +86,6 @@ public class Main {
 					valoresNuevos.put("telefono", Integer.parseInt(sc.nextLine()));
 					break;
 				}
-				HashMap<String, Object> restriccionesMod = new HashMap<String, Object>();
-				restriccionesMod.put("email", emailMod);
-				try {
-					DAO.actualizar("cliente", valoresNuevos, restriccionesMod);
-				} catch (SQLException e1) {
-					e1.printStackTrace();
-				}
 				break;
 			case 4:
 				try {
