@@ -66,5 +66,5 @@ public abstract class DAO {
 		desconectar(smt);
 		return ret;
 	}
-vgbh
+
 }
