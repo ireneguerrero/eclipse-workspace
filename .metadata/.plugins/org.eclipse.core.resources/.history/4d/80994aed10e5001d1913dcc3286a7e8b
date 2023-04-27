@@ -100,7 +100,7 @@ public abstract class DAO {
 				String nombreCol = (String) hsCols.next();
 				try {
 					fila.add(cursor.getInt(cursor.findColumn(nombreCol)));
-				} catch (NumberFormatException | SQLException e) {
+				} catch (SQLException e) {
 					fila.add(cursor.getString(cursor.findColumn(nombreCol)));
 				}
 			}
