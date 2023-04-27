@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;battle.royal&apos; to &apos;lucha.a.muerte.en.cenec&apos;" description="Rename resource &apos;battle.royal&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/battle.royal" name="lucha.a.muerte.en.cenec" stamp="1676386445333" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;lucha.a.muerte.en.cenec&apos; to &apos;combate.a.muerte.en.cenec&apos;" description="Rename resource &apos;lucha.a.muerte.en.cenec&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/lucha.a.muerte.en.cenec" name="combate.a.muerte.en.cenec" stamp="1676391379353" updateReferences="true"/>
+</session>

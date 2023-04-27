@@ -1,0 +1,17 @@
+package utils;
+
+import java.sql.Connection;
+import java.sql.Statement;
+
+public abstract class DAO {
+	private static Connection conexion;
+	
+	private Statement conectar() {
+		return null;
+	}
+	
+	private void desconectar(Statement s) {
+		
+	}
+	
+}

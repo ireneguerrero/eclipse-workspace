@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;opcion&apos; in &apos;solucion.tamagotchi.daw.Principal.main(...)&apos; to &apos;opcion2&apos;&#x0D;&#x0A;- Original project: &apos;solucion.tamagotchi.daw&apos;&#x0D;&#x0A;- Original element: &apos;solucion.tamagotchi.daw.Principal.main(String[]).opcion&apos;&#x0D;&#x0A;- Renamed element: &apos;opcion&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;opcion&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;solucion.tamagotchi.daw{Principal.java[Principal~main~\[QString;@opcion!1564!1607!1569!1574!B!0!false" name="opcion2" references="true" stamp="1679412791987" version="1.0"/>
+</session>

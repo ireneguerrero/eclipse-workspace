@@ -1,0 +1,7 @@
+package utils;
+
+import java.sql.Connection;
+
+public abstract class DAO {
+	private static Connection conexion;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\irene\eclipse-workspace\solucion.recuperacion.2do.examen\solucion.recuperacion.2do.examen"/>
+			<item value="C:\Users\irene\eclipse-workspace\solucion.tamagotchi.daw\solucion.tamagotchi.daw"/>
+			<item value="C:\Users\irene\eclipse-workspace\examen.tiendainformatica.daw"/>
+			<item value="C:\Users\irene\eclipse-workspace\ExamenCazadoresPDO"/>
+			<item value="C:\Users\irene\eclipse-workspace\examen.2022.Futbol"/>
+			<item value="C:\Users\irene\eclipse-workspace\ejercicio.tamagotchi.corregido"/>
+			<item value="C:\Users\irene\eclipse-workspace\solucion.examen.daw"/>
+			<item value="C:\Users\irene\eclipse-workspace\ejercicios.recursividad.y.strings"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\repositorio.examen.irene.guerrero\Irene\examen.irene.guerrero"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\ejercicio.5.las.unicas.chicas.presenciales\Monica\ejericio.4.mso"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\ejercicio.5.las.unicas.chicas.presenciales\Naomi\ejercicio.5.las.unicas.chicas.presenciales"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Lenguaje de marcas\ejercicio.5.las.unicas.chicas.presenciales\Naomi\com.ncamuna.apuntes4.daw"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\com.ejercicioAttackOnTitan.SergioZ"/>
+			<item value="C:\Users\irene\eclipse-workspace\dragon.ball.irene.yoportuhijoMA.TO"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\dragon.ball.irene.yoportuhijoMA.TO"/>
+			<item value="C:\Users\irene\eclipse-workspace\com.irenegc.proyecto1"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="611"/>
+		<item key="DIALOG_Y_ORIGIN" value="269"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="ResourceNavigator">
+		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
+		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1664830912584"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+</section>

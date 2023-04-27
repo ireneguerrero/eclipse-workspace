@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\examen.feria.irene.guerrero\src\main\java\examen\feria\irene\guerrero\Main.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\examen.tiendainformatica.daw\src\main\java\clases\Monitor.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\corregido.ejercicio.2.t.2.irene.guerrero\src\main\java\tamagotchi\Main.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes14\src\main\java\apuntes14\Apuntes14.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\sopa.de.letras\src\main\java\sopa\de\letras\SopaDeLetras.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes13\src\main\java\apuntes13\Apuntes13.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes11\src\main\java\apuntes11\Apuntes11.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\ejercicio.1.t.2.irene.guerrero\src\main\java\ejercicio1t2\QuienEsQuienYMarquesina.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes12\src\main\java\apuntes12\Apuntes12.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes10\src\main\java\apuntes10\apuntes10.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\ejercicios.recursividad.y.strings\src\main\java\ejercicios\recursividad\y\strings\RelacionEjercicios2.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes9\src\main\java\apuntes9\Funciones.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\apuntes4\src\main\java\apuntes4\Apuntes4.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\ejercicio.tamagotchi.corregido\src\main\java\ejercicio\tamagotchi\corregido\Funciones.java"/>
+			<item value="C:\Users\irene\eclipse-workspace\ejercicio.8.irene.guerrero\src\main\java\ejercicio8\TuPropioTamagochi.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="apuntes17"/>
+			<item value="apuntes16"/>
+			<item value="apuntes15"/>
+			<item value="examen.feria.corregido"/>
+			<item value="examen.feria.irene.guerrero"/>
+			<item value="examen.cazadores"/>
+			<item value="examen."/>
+			<item value="examen.greedit"/>
+			<item value="ejercicio.2.t.2.irene.guerrero"/>
+			<item value="battle.royal"/>
+			<item value="apuntes14"/>
+			<item value="examen.1.trimestre.2.irene.guerrero"/>
+			<item value="borrar"/>
+			<item value="sopa.de.letras"/>
+			<item value="ataque.goblin"/>
+		</list>
+		<list key="name">
+			<item value="apuntes17"/>
+			<item value="apuntes16"/>
+			<item value="apuntes15"/>
+			<item value="examen.feria.corregido"/>
+			<item value="examen.feria.irene.guerrero"/>
+			<item value="examen.cazadores"/>
+			<item value="examen.greedit"/>
+			<item value="ejercicio.2.t.2.irene.guerrero"/>
+			<item value="battle.royal"/>
+			<item value="apuntes14"/>
+			<item value="examen.1.trimestre.2.irene.guerrero"/>
+			<item value="borrar"/>
+			<item value="sopa.de.letras"/>
+			<item value="ataque.goblin"/>
+			<item value="apuntes13"/>
+		</list>
+		<list key="artifactId">
+			<item value="apuntes17"/>
+			<item value="apuntes16"/>
+			<item value="apuntes15"/>
+			<item value="examen.feria.corregido"/>
+			<item value="examen.feria.irene.guerrero"/>
+			<item value="examen.cazadores"/>
+			<item value="examen.greedit"/>
+			<item value="ejercicio.2.t.2.irene.guerrero"/>
+			<item value="battle.royal"/>
+			<item value="apuntes14"/>
+			<item value="examen.1.trimestre.2.irene.guerrero"/>
+			<item value="borrar"/>
+			<item value="sopa.de.letras"/>
+			<item value="ataque.goblin"/>
+			<item value="apuntes13"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

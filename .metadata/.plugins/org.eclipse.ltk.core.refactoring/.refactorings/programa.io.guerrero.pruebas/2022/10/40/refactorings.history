@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;programa.io.guerrero.pruebas2.PruebasIo&apos; to &apos;PruebasIO&apos;&#x0D;&#x0A;- Original project: &apos;programa.io.guerrero.pruebas&apos;&#x0D;&#x0A;- Original element: &apos;programa.io.guerrero.pruebas2.PruebasIo&apos;&#x0D;&#x0A;- Renamed element: &apos;programa.io.guerrero.pruebas2.PruebasIO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PruebasIo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;programa.io.guerrero.pruebas2{PruebasIo.java[PruebasIo" matchStrategy="1" name="PruebasIO" qualified="false" references="true" similarDeclarations="false" stamp="1664896760271" textual="false" version="1.0"/>
+</session>

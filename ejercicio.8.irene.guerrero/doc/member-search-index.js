@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"ejercicio8","c":"TuPropioTamagochi","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"ejercicio8","c":"TuPropioTamagochi","l":"TuPropioTamagochi()","u":"%3Cinit%3E()"}];updateSearchResults();
