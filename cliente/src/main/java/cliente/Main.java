@@ -12,36 +12,34 @@ import utils.DAO;
 public class Main {
 
 	public static void main(String[] args) {
-		//4 - Si el array que recibes de la función consultar está vacío, quiere decir que el usuario o la contraseña
-		//    no son correctos:
-		//    Vuelve a pedirlos por teclado las veces que haga falta hasta que ponga los datos correctos
-		//    En ese caso, di al usuario ¡Login correcto!, crea una variable de tipo cliente con los datos que te devuelve
-		//    el ArrayListm y usa toString para imprimir el cliente por pantalla (recuerda: el password no tiene que salir aquí)
 		Scanner sc=new Scanner(System.in);
-		
-		
-		System.out.println("Dime el email de la persona a consultar");
+		ArrayList<Object> resultado=null;
+		do {
+		System.out.println("Dime tu email");
 		String email=sc.nextLine();
-		System.out.println("Dime su contraseña");
-		String contrasena=sc.nextLine();
+		System.out.println("Dime tu contraseña");
+		String contraseña=sc.nextLine();
+		
+		LinkedHashSet<String> columnas =new LinkedHashSet<String>();
+		columnas.add("email");
+		columnas.add("nombre");
+		columnas.add("telefono");
+		
+		HashMap<String,Object> restricciones=new HashMap<String,Object>();
+		restricciones.put("email", email);
+		restricciones.put("password", contraseña);
 		
 		try {
-			LinkedHashSet<String> columnasSacar = new LinkedHashSet<String>();
-			columnasSacar.add("email");
-			columnasSacar.add("telefono");
-			columnasSacar.add("nombre");
-			HashMap<String, Object> restricciones = new HashMap<String, Object>();
-			restricciones.put("email", email);
-			restricciones.put("contraseña", contrasena);
-			ArrayList<Object> cliente = DAO.consultar("cliente", columnasSacar, restricciones);
-			Cliente c= new Cliente(cliente.get(0));
-			for (byte i = 0; i < c.size(); i++) {
-				System.out.print(c.get(i) + " : ");
-			}
-			System.out.println();
+			resultado= DAO.consultar("cliente", columnas, restricciones);
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		}while(resultado.isEmpty());
+		System.out.println("¡Login correcto!");
+		
+		Cliente cliente=new  Cliente((String)resultado.get(0), (Integer)resultado.get(2), (String)resultado.get(1));
+		System.out.println(cliente);
 		
 	}
 
