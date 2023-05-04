@@ -1,28 +1,37 @@
 package apuntes18;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 //		Prueba IO
 		try {
-			FileWriter escritor=new FileWriter("./prueba.txt");
-			escritor.write("Hola Mundo ");
-			escritor.write("Sigo escribiendo ");
-			escritor.write("Ya voy a parar ");
-			escritor.write("ya está");
+			FileWriter escritor = new FileWriter("./prueba.txt", true);
+			escritor.write("Hola Mundo\n");
+			escritor.write("Sigo escribiendo\n");
+			escritor.write("Ya voy a parar\n");
+			escritor.write("ya está\n");
+			escritor.write("" + 97 + "\n");
 			escritor.flush();
-			Scanner sc=new Scanner(System.in);
-			System.out.println("Pulsa intro");
-			sc.nextLine();
 			escritor.close();
+
+			BufferedReader lector = new BufferedReader(new FileReader("./prueba.txt"));
+			String linea = lector.readLine();
+			String texto = "";
+			while (linea != null) {
+				texto += linea + "\n";
+				linea = lector.readLine();
+			}
+			lector.close();
+			System.out.println(texto);
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 
 	}
 

@@ -1,5 +1,9 @@
 package utils;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -16,10 +20,24 @@ public abstract class DAO {
 
 	private static Statement conectar() {
 		try {
+			BufferedReader lector = new BufferedReader(new FileReader("bdconfig.ini"));
+			String ip = lector.readLine();
+			int puerto = Integer.parseInt(lector.readLine());
+			String nombreBD = lector.readLine();
+			String user = lector.readLine();
+			String password = lector.readLine();
+			lector.close();
 			// también se puede poner localhost:nº del puerto/el nombre de la base de datos
-			conexion = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/bicicletasdaw", "root", "");
+			conexion = DriverManager.getConnection("jdbc:mysql://" + ip + ":" + puerto + "/" + nombreBD, user,
+					password);
 			return conexion.createStatement(); // siempre java.sql
 		} catch (SQLException e) {
+			e.printStackTrace();
+			return null;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return null;
+		} catch (IOException e) {
 			e.printStackTrace();
 			return null;
 		}
@@ -107,14 +125,17 @@ public abstract class DAO {
 		ResultSet cursor = smt.executeQuery(query);
 		ArrayList<Object> fila = new ArrayList<Object>();
 		while (cursor.next()) {
-			Iterator hsCols = columnasSelect.iterator();
-			while (hsCols.hasNext()) {
-				String nombreCol = (String) hsCols.next();
-				try {
-					fila.add(cursor.getInt(cursor.findColumn(nombreCol)));
-				} catch (NumberFormatException | SQLException e) {
-					fila.add(cursor.getString(cursor.findColumn(nombreCol)));
+			Iterator hscl = columnasSelect.iterator();
+			while (hscl.hasNext()) {
+				String nombreCl = (String) hscl.next();
+				Object valorColumna = cursor.getObject(cursor.findColumn(nombreCl));
+				Object valor = null;
+				if (valorColumna.getClass() == String.class) {
+					valor = (String) valorColumna;
+				} else if (valorColumna.getClass() == Integer.class) {
+					valor = (int) valorColumna;
 				}
+				fila.add(valor);
 			}
 		}
 		desconectar(smt);
