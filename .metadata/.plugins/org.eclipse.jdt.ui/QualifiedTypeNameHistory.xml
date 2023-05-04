@@ -38,7 +38,6 @@
     <fullyQualifiedTypeName name="exceptions.NombreConNumerosException"/>
     <fullyQualifiedTypeName name="exceptions.NombreZordInvalidoException"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
-    <fullyQualifiedTypeName name="clases.Cliente"/>
     <fullyQualifiedTypeName name="clases.Bicicleta"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
@@ -52,4 +51,12 @@
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="exceptions.ClienteChauChauException"/>
+    <fullyQualifiedTypeName name="exceptions.ClienteNoExisteException"/>
+    <fullyQualifiedTypeName name="clases.Cliente"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="exceptions.ContraseñaInvalidaException"/>
 </qualifiedTypeNameHistroy>
