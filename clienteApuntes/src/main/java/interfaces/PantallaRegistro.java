@@ -15,9 +15,9 @@ import javax.swing.DefaultComboBoxModel;
 
 public class PantallaRegistro extends JPanel {
 	private Ventana ventana;
-	private JTextField textField;
+	private JTextField txtNombre;
 	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField textContra;
 	private JPasswordField contraseña;
 	private JTextField txtTelfono;
 	private JTextField txtEmail;
@@ -36,30 +36,30 @@ public class PantallaRegistro extends JPanel {
 		botonRegis.setBounds(185, 355, 119, 43);
 		add(botonRegis);
 		
-		textField = new JTextField();
-		textField.setText("Nombre");
-		textField.setHorizontalAlignment(SwingConstants.CENTER);
-		textField.setFont(new Font("Bradley Hand ITC", Font.BOLD, 13));
-		textField.setEditable(false);
-		textField.setColumns(10);
-		textField.setBackground(new Color(204, 153, 255));
-		textField.setBounds(35, 72, 98, 35);
-		add(textField);
+		txtNombre = new JTextField();
+		txtNombre.setText("Nombre");
+		txtNombre.setHorizontalAlignment(SwingConstants.CENTER);
+		txtNombre.setFont(new Font("Bradley Hand ITC", Font.BOLD, 13));
+		txtNombre.setEditable(false);
+		txtNombre.setColumns(10);
+		txtNombre.setBackground(new Color(204, 153, 255));
+		txtNombre.setBounds(35, 72, 98, 35);
+		add(txtNombre);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
 		textField_1.setBounds(35, 123, 98, 19);
 		add(textField_1);
 		
-		textField_2 = new JTextField();
-		textField_2.setText("Contraseña");
-		textField_2.setHorizontalAlignment(SwingConstants.CENTER);
-		textField_2.setFont(new Font("Bradley Hand ITC", Font.BOLD, 13));
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
-		textField_2.setBackground(new Color(204, 153, 255));
-		textField_2.setBounds(429, 72, 98, 35);
-		add(textField_2);
+		textContra = new JTextField();
+		textContra.setText("Contraseña");
+		textContra.setHorizontalAlignment(SwingConstants.CENTER);
+		textContra.setFont(new Font("Bradley Hand ITC", Font.BOLD, 13));
+		textContra.setEditable(false);
+		textContra.setColumns(10);
+		textContra.setBackground(new Color(204, 153, 255));
+		textContra.setBounds(429, 72, 98, 35);
+		add(textContra);
 		
 		contraseña = new JPasswordField();
 		contraseña.setBounds(429, 123, 98, 19);
