@@ -10,116 +10,115 @@ import javax.swing.JTextPane;
 import java.awt.Color;
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class PantallaLogin extends JPanel {
 	private Ventana ventana;
-	private JTextField usuario1;
-	private JTextField usuario2;
-	private JTextField nombre;
-	private JPasswordField password1;
-	private JPasswordField password2;
+	private JPasswordField campoContraseña;
+	private JTextField txtPaRegistrarceVe;
+	private JTextField txtNombre;
+	private JTextField txtPaHaseLogin;
+	private JTextField txtLaSombrita;
+	private JTextField campoNombre;
 
 	public PantallaLogin(Ventana v) {
 		this.ventana = v;
-		setBackground(new Color(135, 206, 250));
+		setBackground(new Color(74, 146, 176));
 		setLayout(null);
 
 		JButton botonLogin = new JButton("Login");
+		botonLogin.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				String nombre = campoNombre.getText();
+				String contraseña = new String(campoContraseña.getPassword());
+				System.out.println(nombre + " : " + contraseña);
+			}
+		});
+		botonLogin.setBackground(new Color(74, 146, 176));
+		botonLogin.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		botonLogin.setToolTipText("Pínchame para iniciar sesión");
 		botonLogin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		botonLogin.setBounds(69, 354, 119, 43);
+		botonLogin.setBounds(492, 292, 119, 43);
 		add(botonLogin);
 
-		JTextArea txtrWenohDia = new JTextArea();
-		txtrWenohDia.setEditable(false);
-		txtrWenohDia.setForeground(Color.WHITE);
-		txtrWenohDia.setBackground(Color.MAGENTA);
-		txtrWenohDia.setText("wenoh dia");
-		txtrWenohDia.setBounds(290, 35, 110, 22);
-		add(txtrWenohDia);
-
-		usuario1 = new JTextField();
-		usuario1.setBounds(79, 214, 96, 19);
-		add(usuario1);
-		usuario1.setColumns(10);
-
-		JTextArea txtrPaHaseLogin = new JTextArea();
-		txtrPaHaseLogin.setEditable(false);
-		txtrPaHaseLogin.setText("pa hase login");
-		txtrPaHaseLogin.setBounds(79, 108, 137, 22);
-		add(txtrPaHaseLogin);
-
-		JButton botonRegis = new JButton("Registrarce");
+		JButton botonRegis = new JButton("La sombrita");
+		botonRegis.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				ventana.cambiarAPantalla(PantallaRegistro.class);
+			}
+		});
+		botonRegis.setBackground(new Color(74, 146, 176));
+		botonRegis.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		botonRegis.setToolTipText("Pínchame pa registrarce");
 		botonRegis.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		botonRegis.setBounds(488, 354, 119, 43);
+		botonRegis.setBounds(84, 139, 119, 43);
 		add(botonRegis);
 
-		JTextArea txtrLaSombrita = new JTextArea();
-		txtrLaSombrita.setEditable(false);
-		txtrLaSombrita.setText("la sombrita");
-		txtrLaSombrita.setBounds(504, 108, 137, 22);
-		add(txtrLaSombrita);
+		campoContraseña = new JPasswordField();
+		campoContraseña.setBounds(502, 263, 98, 19);
+		add(campoContraseña);
 
-		JTextArea txtrPaRegistrarceVe = new JTextArea();
-		txtrPaRegistrarceVe.setEditable(false);
-		txtrPaRegistrarceVe.setText("pa registrarce ve por la sombrita");
-		txtrPaRegistrarceVe.setBounds(199, 67, 332, 22);
-		add(txtrPaRegistrarceVe);
+		txtPaRegistrarceVe = new JTextField();
+		txtPaRegistrarceVe.setFont(new Font("Bradley Hand ITC", Font.BOLD, 17));
+		txtPaRegistrarceVe.setBackground(new Color(204, 153, 255));
+		txtPaRegistrarceVe.setHorizontalAlignment(SwingConstants.CENTER);
+		txtPaRegistrarceVe.setEditable(false);
+		txtPaRegistrarceVe.setText("pa registrarce ve por la sombrita");
+		txtPaRegistrarceVe.setBounds(0, 0, 268, 59);
+		add(txtPaRegistrarceVe);
+		txtPaRegistrarceVe.setColumns(10);
 
-		usuario2 = new JTextField();
-		usuario2.setColumns(10);
-		usuario2.setBounds(488, 259, 96, 19);
-		add(usuario2);
+		txtNombre = new JTextField();
+		txtNombre.setText("Nombre");
+		txtNombre.setHorizontalAlignment(SwingConstants.CENTER);
+		txtNombre.setFont(new Font("Bradley Hand ITC", Font.BOLD, 13));
+		txtNombre.setEditable(false);
+		txtNombre.setColumns(10);
+		txtNombre.setBackground(new Color(204, 153, 255));
+		txtNombre.setBounds(502, 144, 98, 35);
+		add(txtNombre);
 
-		nombre = new JTextField();
-		nombre.setColumns(10);
-		nombre.setBounds(488, 203, 96, 19);
-		add(nombre);
+		txtPaHaseLogin = new JTextField();
+		txtPaHaseLogin.setText("pa hase login");
+		txtPaHaseLogin.setHorizontalAlignment(SwingConstants.CENTER);
+		txtPaHaseLogin.setFont(new Font("Bradley Hand ITC", Font.BOLD, 16));
+		txtPaHaseLogin.setEditable(false);
+		txtPaHaseLogin.setColumns(10);
+		txtPaHaseLogin.setBackground(new Color(204, 153, 255));
+		txtPaHaseLogin.setBounds(479, 80, 151, 35);
+		add(txtPaHaseLogin);
 
-		JTextPane txtpnNombre = new JTextPane();
-		txtpnNombre.setEditable(false);
-		txtpnNombre.setText("nombre");
-		txtpnNombre.setBounds(489, 173, 67, 19);
-		add(txtpnNombre);
+		txtLaSombrita = new JTextField();
+		txtLaSombrita.setText("la sombrita");
+		txtLaSombrita.setHorizontalAlignment(SwingConstants.CENTER);
+		txtLaSombrita.setFont(new Font("Bradley Hand ITC", Font.BOLD, 16));
+		txtLaSombrita.setEditable(false);
+		txtLaSombrita.setColumns(10);
+		txtLaSombrita.setBackground(new Color(204, 153, 255));
+		txtLaSombrita.setBounds(66, 80, 151, 35);
+		add(txtLaSombrita);
 
-		JTextPane txtpnUsuario = new JTextPane();
-		txtpnUsuario.setEditable(false);
-		txtpnUsuario.setText("usuario");
-		txtpnUsuario.setBounds(79, 188, 77, 22);
-		add(txtpnUsuario);
+		campoNombre = new JTextField();
+		campoNombre.setBounds(502, 189, 98, 19);
+		add(campoNombre);
+		campoNombre.setColumns(10);
 
-		JTextPane txtpnUsuario_1 = new JTextPane();
-		txtpnUsuario_1.setEditable(false);
-		txtpnUsuario_1.setText("usuario");
-		txtpnUsuario_1.setBounds(488, 227, 77, 22);
-		add(txtpnUsuario_1);
-
-		JTextPane txtpnContrasea = new JTextPane();
-		txtpnContrasea.setEditable(false);
-		txtpnContrasea.setText("contraseña");
-		txtpnContrasea.setBounds(78, 259, 110, 22);
-		add(txtpnContrasea);
-
-		JTextPane txtpnContrasea_1 = new JTextPane();
-		txtpnContrasea_1.setEditable(false);
-		txtpnContrasea_1.setText("contraseña");
-		txtpnContrasea_1.setBounds(488, 290, 96, 22);
-		add(txtpnContrasea_1);
-
-		password1 = new JPasswordField();
-		password1.setBounds(79, 301, 101, 22);
-		add(password1);
-
-		password2 = new JPasswordField();
-		password2.setBounds(488, 322, 101, 22);
-		add(password2);
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\irene\\OneDrive\\Escritorio\\descarga.jfif"));
+		lblNewLabel.setBounds(0, 47, 700, 500);
+		add(lblNewLabel);
 	}
 
 	private static class __Tmp {
