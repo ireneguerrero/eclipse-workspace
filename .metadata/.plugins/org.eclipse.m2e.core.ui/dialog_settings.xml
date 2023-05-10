@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\combate.a.muerte.en.cenec"/>
 			<item value="C:\Users\irene\eclipse-workspace\cliente\src\main\java\clases\Cliente.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes17\src\main\java\apuntes17\Main.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\examen.feria.irene.guerrero\src\main\java\examen\feria\irene\guerrero\Main.java"/>
@@ -16,7 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\apuntes10\src\main\java\apuntes10\apuntes10.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\ejercicios.recursividad.y.strings\src\main\java\ejercicios\recursividad\y\strings\RelacionEjercicios2.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes9\src\main\java\apuntes9\Funciones.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\apuntes4\src\main\java\apuntes4\Apuntes4.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
 			<item value="cliente"/>
 			<item value="apuntes17"/>
@@ -73,9 +74,9 @@
 			<item value="battle.royal"/>
 			<item value="apuntes14"/>
 			<item value="examen.1.trimestre.2.irene.guerrero"/>
-			<item value="borrar"/>
 		</list>
 		<list key="name">
+			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
 			<item value="cliente"/>
 			<item value="apuntes17"/>
@@ -90,9 +91,9 @@
 			<item value="apuntes14"/>
 			<item value="examen.1.trimestre.2.irene.guerrero"/>
 			<item value="borrar"/>
-			<item value="sopa.de.letras"/>
 		</list>
 		<list key="artifactId">
+			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
 			<item value="cliente"/>
 			<item value="apuntes17"/>
@@ -107,7 +108,6 @@
 			<item value="apuntes14"/>
 			<item value="examen.1.trimestre.2.irene.guerrero"/>
 			<item value="borrar"/>
-			<item value="sopa.de.letras"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
