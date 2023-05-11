@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="labyrinth"/>
 			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
 			<item value="cliente"/>
@@ -73,9 +74,9 @@
 			<item value="ejercicio.2.t.2.irene.guerrero"/>
 			<item value="battle.royal"/>
 			<item value="apuntes14"/>
-			<item value="examen.1.trimestre.2.irene.guerrero"/>
 		</list>
 		<list key="name">
+			<item value="labyrinth"/>
 			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
 			<item value="cliente"/>
@@ -90,9 +91,9 @@
 			<item value="battle.royal"/>
 			<item value="apuntes14"/>
 			<item value="examen.1.trimestre.2.irene.guerrero"/>
-			<item value="borrar"/>
 		</list>
 		<list key="artifactId">
+			<item value="labyrinth"/>
 			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
 			<item value="cliente"/>
@@ -107,7 +108,6 @@
 			<item value="battle.royal"/>
 			<item value="apuntes14"/>
 			<item value="examen.1.trimestre.2.irene.guerrero"/>
-			<item value="borrar"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

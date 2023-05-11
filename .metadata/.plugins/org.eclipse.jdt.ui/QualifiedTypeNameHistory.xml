@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
-    <fullyQualifiedTypeName name="que.viene.la.pelona.Funciones"/>
     <fullyQualifiedTypeName name="ataque.goblin.Funciones1D"/>
     <fullyQualifiedTypeName name="clases.Sim"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -22,7 +20,6 @@
     <fullyQualifiedTypeName name="clases.Gato"/>
     <fullyQualifiedTypeName name="clases.Juego"/>
     <fullyQualifiedTypeName name="enums.Insignia"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="clases.Feria"/>
     <fullyQualifiedTypeName name="clases.Tiovivo"/>
     <fullyQualifiedTypeName name="clases.Noria"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="javax.swing.ButtonModel"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+    <fullyQualifiedTypeName name="javax.sound.sampled.AudioInputStream"/>
 </qualifiedTypeNameHistroy>
