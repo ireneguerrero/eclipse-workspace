@@ -1,7 +1,9 @@
 package clases;
 
-public class Recompensa extends ElementoConNombreEImagen{
+import javax.sound.sampled.AudioInputStream;
+
+public class Recompensa extends ElementoConNombreEImagen {
 	private String tipo;
 	private byte puntos;
-//	private Sonido sonido;
+	private AudioInputStream sonido;
 }

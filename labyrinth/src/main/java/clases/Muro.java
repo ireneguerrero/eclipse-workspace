@@ -1,5 +1,5 @@
 package clases;
 
-public class Muro extends Celda{
+public class Muro extends Celda {
 
 }

@@ -1,5 +1,5 @@
 package clases;
 
-public class CeldaVacia extends Celda{
+public class CeldaVacia extends Celda {
 
 }

@@ -1,5 +1,5 @@
 package clases;
 
-public class Jugador extends Personaje{
+public class Jugador extends Personaje {
 	private byte posicion;
 }

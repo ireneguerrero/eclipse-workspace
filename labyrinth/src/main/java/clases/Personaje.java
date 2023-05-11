@@ -1,6 +1,6 @@
 package clases;
 
-public class Personaje extends ElementoConNombreEImagen{
+public class Personaje extends ElementoConNombreEImagen {
 	private byte vida;
 	private boolean estado;
 	private byte poder;
