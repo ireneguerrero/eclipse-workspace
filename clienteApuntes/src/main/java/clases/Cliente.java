@@ -15,7 +15,7 @@ public class Cliente {
 	private int telefono;
 	private String nombre;
 
-	public Cliente(String email, String nombre, int telefono, String contraseña) throws SQLException {
+	public Cliente(String nombre, String email, int telefono, String contraseña) throws SQLException {
 		super();
 		HashMap<String, Object> cols = new HashMap<String, Object>();
 		cols.put("email", email);

@@ -3,12 +3,16 @@ package interfaces;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
+
+import clases.Cliente;
+
 import javax.swing.JPasswordField;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
@@ -21,6 +25,8 @@ import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 public class PantallaRegistro extends JPanel {
 	private Ventana ventana;
@@ -191,6 +197,22 @@ public class PantallaRegistro extends JPanel {
 //				if(radioHombre.isSelected()) {
 //					
 //				}//lo mismo con radioMujer y radioOtro
+
+				try {
+					new Cliente(nombre, email, telefono, contraseña);
+					JOptionPane.showMessageDialog(ventana, "Registrado correctamente", "Éxito",
+							JOptionPane.INFORMATION_MESSAGE);
+				} catch (SQLIntegrityConstraintViolationException e3) {
+					JOptionPane.showMessageDialog(ventana, "El email ya existe", "No se pudo registrar",
+							JOptionPane.ERROR_MESSAGE);
+				} catch (SQLException e1) {
+					JOptionPane.showMessageDialog(ventana, e1.getMessage(), "No se puede conectar a la base de datos",
+							JOptionPane.ERROR_MESSAGE);
+				} catch (NumberFormatException e2) {
+					JOptionPane.showMessageDialog(ventana, "Tienes que poner un número de teléfono que sea un número",
+							"Número de teléfono incorrecto", JOptionPane.ERROR_MESSAGE);
+				}
+
 			}
 		});
 		botonRegistrar.setBackground(new Color(0, 0, 102));
