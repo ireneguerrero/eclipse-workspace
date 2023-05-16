@@ -190,15 +190,15 @@ public class PantallaRegistro extends JPanel {
 		botonRegistrar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				String email = campoEmail.getText();
-				String nombre = campoNombre.getText();
-				int telefono = Integer.parseInt(campoTelefono.getText());
-				String contraseña = new String(campoContraseña.getPassword());
 //				if(radioHombre.isSelected()) {
 //					
 //				}//lo mismo con radioMujer y radioOtro
 
 				try {
+					String email = campoEmail.getText();
+					String nombre = campoNombre.getText();
+					int telefono = Integer.parseInt(campoTelefono.getText());
+					String contraseña = new String(campoContraseña.getPassword());
 					new Cliente(nombre, email, telefono, contraseña);
 					JOptionPane.showMessageDialog(ventana, "Registrado correctamente", "Éxito",
 							JOptionPane.INFORMATION_MESSAGE);
