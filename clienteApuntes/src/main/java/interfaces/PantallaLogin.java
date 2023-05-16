@@ -10,11 +10,18 @@ import javax.swing.JTextPane;
 import java.awt.Color;
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
+
+import clases.Cliente;
+import exceptions.ClienteNoExisteException;
+import exceptions.ContraseñaInvalidaException;
+
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.sql.SQLException;
 
 public class PantallaLogin extends JPanel {
 	private Ventana ventana;
@@ -34,9 +41,30 @@ public class PantallaLogin extends JPanel {
 		botonLogin.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
-				String nombre = campoNombre.getText();
+				String usuario = campoNombre.getText();
 				String contraseña = new String(campoContraseña.getPassword());
-				System.out.println(nombre + " : " + contraseña);
+				System.out.println(usuario + " : " + contraseña);
+				try {
+					ventana.clienteLogado = new Cliente(usuario, contraseña);
+					JOptionPane.showMessageDialog(ventana, "Bienvenid@, " + ventana.clienteLogado.getNombre(),
+							"Inicio de sesión exitoso", JOptionPane.INFORMATION_MESSAGE);
+					// TODO : MANDAR A LA SIGUENTE PANTALLA
+					ventana.cambiarAPantalla(PantallaListado.class);
+				} catch (SQLException e1) {
+					JOptionPane.showMessageDialog(ventana, e1.getMessage(), "Login fallido", JOptionPane.ERROR_MESSAGE);
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ClienteNoExisteException e1) {
+					JOptionPane.showMessageDialog(ventana, "El cliente no existe", "Login fallido",
+							JOptionPane.ERROR_MESSAGE);
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (ContraseñaInvalidaException e1) {
+					JOptionPane.showMessageDialog(ventana, "La contraseña no existe", "Login fallido",
+							JOptionPane.ERROR_MESSAGE);
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		botonLogin.setBackground(new Color(74, 146, 176));
@@ -46,7 +74,7 @@ public class PantallaLogin extends JPanel {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		botonLogin.setBounds(492, 292, 119, 43);
+		botonLogin.setBounds(491, 259, 119, 43);
 		add(botonLogin);
 
 		JButton botonRegis = new JButton("La sombrita");
@@ -67,7 +95,7 @@ public class PantallaLogin extends JPanel {
 		add(botonRegis);
 
 		campoContraseña = new JPasswordField();
-		campoContraseña.setBounds(502, 263, 98, 19);
+		campoContraseña.setBounds(502, 230, 98, 19);
 		add(campoContraseña);
 
 		txtPaRegistrarceVe = new JTextField();

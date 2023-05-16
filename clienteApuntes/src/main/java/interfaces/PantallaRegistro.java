@@ -199,9 +199,11 @@ public class PantallaRegistro extends JPanel {
 					String nombre = campoNombre.getText();
 					int telefono = Integer.parseInt(campoTelefono.getText());
 					String contraseña = new String(campoContraseña.getPassword());
+					
 					new Cliente(nombre, email, telefono, contraseña);
 					JOptionPane.showMessageDialog(ventana, "Registrado correctamente", "Éxito",
 							JOptionPane.INFORMATION_MESSAGE);
+					ventana.cambiarAPantalla(PantallaLogin.class);
 				} catch (SQLIntegrityConstraintViolationException e3) {
 					JOptionPane.showMessageDialog(ventana, "El email ya existe", "No se pudo registrar",
 							JOptionPane.ERROR_MESSAGE);

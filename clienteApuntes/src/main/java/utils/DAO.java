@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -136,10 +137,13 @@ public abstract class DAO {
 				String nombreCl = (String) hscl.next();
 				Object valorColumna = cursor.getObject(cursor.findColumn(nombreCl));
 				Object valor = null;
+				System.out.println(nombreCl+" : "+valorColumna.getClass());
 				if (valorColumna.getClass() == String.class) {
 					valor = (String) valorColumna;
 				} else if (valorColumna.getClass() == Integer.class) {
 					valor = (int) valorColumna;
+				}else if (valorColumna.getClass()== BigDecimal.class) {
+					valor = ((BigDecimal) valorColumna).intValue();
 				}
 				fila.add(valor);
 			}
