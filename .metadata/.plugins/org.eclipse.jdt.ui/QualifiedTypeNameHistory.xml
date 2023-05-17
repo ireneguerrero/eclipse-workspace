@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="ataque.goblin.Funciones1D"/>
-    <fullyQualifiedTypeName name="clases.Sim"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="clases.Arma"/>
     <fullyQualifiedTypeName name="clases.Escudo"/>
     <fullyQualifiedTypeName name="clases.Luchador"/>
     <fullyQualifiedTypeName name="clases.Guerrero"/>
@@ -48,7 +44,6 @@
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
     <fullyQualifiedTypeName name="exceptions.ClienteChauChauException"/>
     <fullyQualifiedTypeName name="exceptions.ClienteNoExisteException"/>
-    <fullyQualifiedTypeName name="clases.Cliente"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="exceptions.ContraseñaInvalidaException"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
@@ -60,4 +55,9 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
     <fullyQualifiedTypeName name="javax.sound.sampled.AudioInputStream"/>
+    <fullyQualifiedTypeName name="java.sql.SQLIntegrityConstraintViolationException"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="clases.Cliente"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
 </qualifiedTypeNameHistroy>
