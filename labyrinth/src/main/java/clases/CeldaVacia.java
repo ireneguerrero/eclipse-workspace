@@ -1,13 +1,44 @@
 package clases;
 
-import javax.swing.ImageIcon;
-
 public class CeldaVacia extends Celda {
+	private Llave llave;
+	private Puerta puerta;
+	private Recompensa recompensa;
 
-	public CeldaVacia(String nombre, ImageIcon imagen, Llave llave, Puerta puerta, Recompensa recompensa,
-			Enemigo enemigo, boolean salida) {
-		super(nombre, imagen, llave, puerta, recompensa, enemigo, salida);
-		// TODO Auto-generated constructor stub
+	public CeldaVacia(Llave llave, Puerta puerta, Recompensa recompensa) {
+		super();
+		this.llave = llave;
+		this.puerta = puerta;
+		this.recompensa = recompensa;
+	}
+
+	public Llave getLlave() {
+		return llave;
+	}
+
+	public void setLlave(Llave llave) {
+		this.llave = llave;
+	}
+
+	public Puerta getPuerta() {
+		return puerta;
+	}
+
+	public void setPuerta(Puerta puerta) {
+		this.puerta = puerta;
+	}
+
+	public Recompensa getRecompensa() {
+		return recompensa;
+	}
+
+	public void setRecompensa(Recompensa recompensa) {
+		this.recompensa = recompensa;
+	}
+
+	@Override
+	public String toString() {
+		return "CeldaVacia [llave=" + llave + ", puerta=" + puerta + ", recompensa=" + recompensa + "]";
 	}
 
 }

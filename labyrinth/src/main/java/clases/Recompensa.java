@@ -1,18 +1,16 @@
 package clases;
 
-import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
 
-public class Recompensa extends ElementoConNombreEImagen {
+public class Recompensa extends ElementoCelda {
 	private String tipo;
 	private byte puntos;
-	private AudioInputStream sonido;
 
-	public Recompensa(String nombre, ImageIcon imagen, String tipo, byte puntos, AudioInputStream sonido) {
-		super(nombre, imagen);
+	public Recompensa(String nombre, ImageIcon imagen, Clip sonido, String tipo, byte puntos) {
+		super(nombre, imagen, sonido);
 		this.tipo = tipo;
 		this.puntos = puntos;
-		this.sonido = sonido;
 	}
 
 	public String getTipo() {
@@ -31,17 +29,9 @@ public class Recompensa extends ElementoConNombreEImagen {
 		this.puntos = puntos;
 	}
 
-	public AudioInputStream getSonido() {
-		return sonido;
-	}
-
-	public void setSonido(AudioInputStream sonido) {
-		this.sonido = sonido;
-	}
-
 	@Override
 	public String toString() {
-		return "Recompensa:\nTipo: " + tipo + "/nPuntos: " + puntos + "\nSonido: " + sonido;
+		return "Recompensa [tipo=" + tipo + ", puntos=" + puntos + "]";
 	}
 
 }

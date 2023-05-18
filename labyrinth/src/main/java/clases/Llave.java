@@ -1,58 +1,26 @@
 package clases;
 
-import javax.sound.sampled.AudioInputStream;
 import javax.swing.ImageIcon;
 
 public class Llave extends ElementoConNombreEImagen {
-	private boolean tipo;
-	private boolean estado;
-	private byte posicion;
-	private AudioInputStream sonido;
+	private boolean esMaestra;
 
-	public Llave(String nombre, ImageIcon imagen, boolean tipo, boolean estado, byte posicion,
-			AudioInputStream sonido) {
+	public Llave(String nombre, ImageIcon imagen, boolean esMaestra) {
 		super(nombre, imagen);
-		this.tipo = tipo;
-		this.estado = estado;
-		this.posicion = posicion;
-		this.sonido = sonido;
+		this.esMaestra = esMaestra;
 	}
 
-	public boolean isTipo() {
-		return tipo;
+	public boolean isEsMaestra() {
+		return esMaestra;
 	}
 
-	public void setTipo(boolean tipo) {
-		this.tipo = tipo;
-	}
-
-	public boolean isEstado() {
-		return estado;
-	}
-
-	public void setEstado(boolean estado) {
-		this.estado = estado;
-	}
-
-	public byte getPosicion() {
-		return posicion;
-	}
-
-	public void setPosicion(byte posicion) {
-		this.posicion = posicion;
-	}
-
-	public AudioInputStream getSonido() {
-		return sonido;
-	}
-
-	public void setSonido(AudioInputStream sonido) {
-		this.sonido = sonido;
+	public void setEsMaestra(boolean esMaestra) {
+		this.esMaestra = esMaestra;
 	}
 
 	@Override
 	public String toString() {
-		return "Llave:\nTipo: " + tipo + "\nEstado: " + estado + "\nPosición: " + posicion + "\nSonido: " + sonido;
+		return "Llave [esMaestra=" + esMaestra + "]";
 	}
 
 }

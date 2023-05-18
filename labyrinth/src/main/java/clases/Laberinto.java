@@ -2,77 +2,57 @@ package clases;
 
 import java.util.Arrays;
 
-import javax.swing.ImageIcon;
-
-public class Laberinto extends ElementoConNombreEImagen {
-	private byte celdas[][];
+public class Laberinto {
 	private byte nivel;
+	private Celda[][] celdas;
 
-	public Laberinto(String nombre, ImageIcon imagen, byte[][] celdas, byte nivel) {
-		super(nombre, imagen);
+	public Laberinto(Celda[][] celdas, byte nivel) {
 		this.celdas = celdas;
 		this.nivel = nivel;
 	}
-	
-	public Laberinto(int numero) {
-	    super("Laberinto", null);
-	    this.nivel = (byte) (numero % 10); // Obtener el último dígito del número
 
-//	    Este constructor crea un laberinto en función del número proporcionado.
-//	    Se utiliza un switch para asignar diferentes valores a la matriz de celdas según el número.
-//	    Si el número no coincide con ninguno de los casos especificados,
-//	    se crea un laberinto vacío con un solo elemento en la matriz de celdas y el nivel se establece en 0.
-	    
+	public Laberinto(int numero) {
 	    switch (numero) {
 	        case 1:
-	            this.celdas = new byte[][]{
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 0, 0, 1},
-	                    {1, 1, 1, 0, 1},
-	                    {1, 0, 0, 0, 1},
-	                    {1, 1, 1, 1, 1}
+	            this.nivel = 1;
+	            this.celdas = new Celda[][] {
+	                {new Celda(), new Celda(), new Celda()},
+	                {new Celda(), new Celda(), new Celda()},
+	                {new Celda(), new Celda(), new Celda()}
 	            };
 	            break;
 	        case 2:
-	            this.celdas = new byte[][]{
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 0, 0, 1},
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 0, 0, 1},
-	                    {1, 1, 1, 1, 1}
+	            this.nivel = 2;
+	            this.celdas = new Celda[][] {
+	                {new Celda(), new Celda(), new Celda(), new Celda()},
+	                {new Celda(), new Celda(), new Celda(), new Celda()},
+	                {new Celda(), new Celda(), new Celda(), new Celda()},
+	                {new Celda(), new Celda(), new Celda(), new Celda()}
 	            };
 	            break;
 	        case 3:
-	            this.celdas = new byte[][]{
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 1, 0, 1},
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 0, 0, 1},
-	                    {1, 1, 1, 1, 1}
-	            };
-	            break;
-	        case 4:
-	            this.celdas = new byte[][]{
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 1, 0, 1},
-	                    {1, 1, 1, 1, 1},
-	                    {1, 0, 1, 0, 1},
-	                    {1, 1, 1, 1, 1}
+	            this.nivel = 3;
+	            this.celdas = new Celda[][] {
+	                {new Celda(), new Celda()},
+	                {new Celda(), new Celda()},
+	                {new Celda(), new Celda()},
+	                {new Celda(), new Celda()},
+	                {new Celda(), new Celda()}
 	            };
 	            break;
 	        default:
-	            this.celdas = new byte[][]{{0}};
 	            this.nivel = 0;
+	            this.celdas = new Celda[0][0]; // Laberinto vacío por defecto
 	            break;
 	    }
 	}
 
 
-	public byte[][] getCeldas() {
+	public Celda[][] getCeldas() {
 		return celdas;
 	}
 
-	public void setCeldas(byte[][] celdas) {
+	public void setCeldas(Celda[][] celdas) {
 		this.celdas = celdas;
 	}
 
