@@ -9,6 +9,11 @@ public class Llave extends ElementoConNombreEImagen {
 		super(nombre, imagen);
 		this.esMaestra = esMaestra;
 	}
+	
+//	public Llave(boolean esMaestra) {
+//		super();
+//		this.esMaestra=esMaestra;
+//	}
 
 	public boolean isEsMaestra() {
 		return esMaestra;

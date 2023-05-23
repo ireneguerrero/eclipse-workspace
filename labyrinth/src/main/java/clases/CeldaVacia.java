@@ -11,6 +11,18 @@ public class CeldaVacia extends Celda {
 		this.puerta = puerta;
 		this.recompensa = recompensa;
 	}
+	
+	public CeldaVacia(Llave llave) {
+		this.llave=llave;
+	}
+	
+	public CeldaVacia(Puerta puerta) {
+		this.puerta=puerta;
+	}
+	
+	public CeldaVacia(Recompensa recompensa) {
+		this.recompensa=recompensa;
+	}
 
 	public Llave getLlave() {
 		return llave;
