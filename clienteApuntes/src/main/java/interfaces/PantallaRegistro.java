@@ -28,7 +28,7 @@ import java.awt.event.MouseEvent;
 import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 
-public class PantallaRegistro extends JPanel {
+public class PantallaRegistro extends PanelMadre {
 	private Ventana ventana;
 	private JButton botonRegistrar;
 	private JTextField campoNombre;

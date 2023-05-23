@@ -11,6 +11,8 @@ import java.awt.Color;
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
+import javax.imageio.ImageIO;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
 
@@ -19,18 +21,24 @@ import exceptions.ClienteNoExisteException;
 import exceptions.ContraseñaInvalidaException;
 
 import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.sql.SQLException;
 
-public class PantallaLogin extends JPanel {
+public class PantallaLogin extends PanelMadre {
 	private Ventana ventana;
 	private JPasswordField campoContraseña;
-	private JTextField txtPaRegistrarceVe;
+	private JTextField txtPaRegistrarce;
 	private JTextField txtNombre;
 	private JTextField txtPaHaseLogin;
 	private JTextField txtLaSombrita;
 	private JTextField campoNombre;
+	private JLabel labelImagen;
 
 	public PantallaLogin(Ventana v) {
 		this.ventana = v;
@@ -98,15 +106,15 @@ public class PantallaLogin extends JPanel {
 		campoContraseña.setBounds(502, 230, 98, 19);
 		add(campoContraseña);
 
-		txtPaRegistrarceVe = new JTextField();
-		txtPaRegistrarceVe.setFont(new Font("Bradley Hand ITC", Font.BOLD, 17));
-		txtPaRegistrarceVe.setBackground(new Color(204, 153, 255));
-		txtPaRegistrarceVe.setHorizontalAlignment(SwingConstants.CENTER);
-		txtPaRegistrarceVe.setEditable(false);
-		txtPaRegistrarceVe.setText("pa registrarce ve por la sombrita");
-		txtPaRegistrarceVe.setBounds(0, 0, 268, 59);
-		add(txtPaRegistrarceVe);
-		txtPaRegistrarceVe.setColumns(10);
+		txtPaRegistrarce = new JTextField();
+		txtPaRegistrarce.setFont(new Font("Bradley Hand ITC", Font.BOLD, 17));
+		txtPaRegistrarce.setBackground(new Color(204, 153, 255));
+		txtPaRegistrarce.setHorizontalAlignment(SwingConstants.CENTER);
+		txtPaRegistrarce.setEditable(false);
+		txtPaRegistrarce.setText("pa registrarce ve por la sombrita");
+		txtPaRegistrarce.setBounds(0, 0, 268, 59);
+		add(txtPaRegistrarce);
+		txtPaRegistrarce.setColumns(10);
 
 		txtNombre = new JTextField();
 		txtNombre.setText("Nombre");
@@ -143,10 +151,17 @@ public class PantallaLogin extends JPanel {
 		add(campoNombre);
 		campoNombre.setColumns(10);
 
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\irene\\OneDrive\\Escritorio\\descarga.jfif"));
-		lblNewLabel.setBounds(0, 47, 700, 500);
-		add(lblNewLabel);
+		labelImagen = new JLabel("");
+		// para escalar las imágenes al tamaño que queramos
+		try {
+			BufferedImage imagen = ImageIO.read(new File("./resultado.jpg"));
+			Image enIcono = imagen.getScaledInstance(200, 100, Image.SCALE_SMOOTH);
+			labelImagen.setIcon(new ImageIcon(enIcono));
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		}
+		labelImagen.setBounds(243, 80, 223, 88);
+		add(labelImagen);
 	}
 
 	private static class __Tmp {
