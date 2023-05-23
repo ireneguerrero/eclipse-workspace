@@ -1,12 +1,12 @@
 package clases;
 
-import javax.swing.ImageIcon;
+import java.awt.image.BufferedImage;
 
 public class ElementoConNombreEImagen {
-	protected String nombre;
-	protected ImageIcon imagen;
+	private String nombre;
+	private BufferedImage imagen;
 
-	public ElementoConNombreEImagen(String nombre, ImageIcon imagen) {
+	public ElementoConNombreEImagen(String nombre, BufferedImage imagen) {
 		super();
 		this.nombre = nombre;
 		this.imagen = imagen;
@@ -20,11 +20,11 @@ public class ElementoConNombreEImagen {
 		this.nombre = nombre;
 	}
 
-	public ImageIcon getImagen() {
+	public BufferedImage getImagen() {
 		return imagen;
 	}
 
-	public void setImagen(ImageIcon imagen) {
+	public void setImagen(BufferedImage imagen) {
 		this.imagen = imagen;
 	}
 

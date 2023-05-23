@@ -1,15 +1,17 @@
 package clases;
 
-import javax.swing.ImageIcon;
+import java.awt.image.BufferedImage;
 
-public class Llave extends ElementoConNombreEImagen {
+import javax.sound.sampled.Clip;
+
+public class Llave extends ElementoCelda {
 	private boolean esMaestra;
 
-	public Llave(String nombre, ImageIcon imagen, boolean esMaestra) {
-		super(nombre, imagen);
+	public Llave(String nombre, BufferedImage imagen, Clip sonido, boolean esMaestra) {
+		super(nombre, imagen, sonido);
 		this.esMaestra = esMaestra;
 	}
-	
+
 //	public Llave(boolean esMaestra) {
 //		super();
 //		this.esMaestra=esMaestra;

@@ -1,11 +1,11 @@
 package clases;
 
-import javax.swing.ImageIcon;
+import java.awt.image.BufferedImage;
 
 public class Jugador extends Personaje {
 	private byte posicion;
 
-	public Jugador(String nombre, ImageIcon imagen, byte vida, boolean estado, byte poder, byte daño, byte fuerza,
+	public Jugador(String nombre, BufferedImage imagen, byte vida, boolean estado, byte poder, byte daño, byte fuerza,
 			byte inteligencia, byte agilidad, byte posicion) {
 		super(nombre, imagen, vida, estado, poder, daño, fuerza, inteligencia, agilidad);
 		this.posicion = posicion;

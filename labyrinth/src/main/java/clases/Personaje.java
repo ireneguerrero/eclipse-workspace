@@ -1,6 +1,6 @@
 package clases;
 
-import javax.swing.ImageIcon;
+import java.awt.image.BufferedImage;
 
 public class Personaje extends ElementoConNombreEImagen {
 	private byte vida;
@@ -11,7 +11,7 @@ public class Personaje extends ElementoConNombreEImagen {
 	private byte inteligencia;
 	private byte agilidad;
 
-	public Personaje(String nombre, ImageIcon imagen, byte vida, boolean estado, byte poder, byte daño, byte fuerza,
+	public Personaje(String nombre, BufferedImage imagen, byte vida, boolean estado, byte poder, byte daño, byte fuerza,
 			byte inteligencia, byte agilidad) {
 		super(nombre, imagen);
 		this.vida = vida;

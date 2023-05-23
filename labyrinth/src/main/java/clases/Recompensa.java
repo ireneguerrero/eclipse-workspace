@@ -1,13 +1,14 @@
 package clases;
 
+import java.awt.image.BufferedImage;
+
 import javax.sound.sampled.Clip;
-import javax.swing.ImageIcon;
 
 public class Recompensa extends ElementoCelda {
 	private String tipo;
 	private byte puntos;
 
-	public Recompensa(String nombre, ImageIcon imagen, Clip sonido, String tipo, byte puntos) {
+	public Recompensa(String nombre, BufferedImage imagen, Clip sonido, String tipo, byte puntos) {
 		super(nombre, imagen, sonido);
 		this.tipo = tipo;
 		this.puntos = puntos;

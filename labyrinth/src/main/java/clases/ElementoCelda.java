@@ -1,15 +1,20 @@
 package clases;
 
+import java.awt.image.BufferedImage;
+
 import javax.sound.sampled.Clip;
-import javax.swing.ImageIcon;
 
 public class ElementoCelda extends ElementoConNombreEImagen {
 	private Clip sonido;
 
-	public ElementoCelda(String nombre, ImageIcon imagen, Clip sonido) {
+	public ElementoCelda(String nombre, BufferedImage imagen, Clip sonido) {
 		super(nombre, imagen);
 		this.sonido = sonido;
 	}
+	
+//	public ElementoCelda() {
+//		
+//	}
 
 	public Clip getSonido() {
 		return sonido;
