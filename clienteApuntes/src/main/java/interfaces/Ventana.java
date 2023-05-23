@@ -1,5 +1,6 @@
 package interfaces;
 
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 import clases.Cliente;
@@ -14,6 +15,7 @@ public class Ventana extends JFrame {
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE); // si se cierra la ventana termina el programa
 		this.setLocationRelativeTo(null); // se pone la ventana centrada
 		this.setContentPane(new PantallaLogin(this));
+		this.setIconImage(new ImageIcon("./fotoclase.jpg").getImage());
 		this.setVisible(true); // tiene que ser la última línea del constructor, se hace visible la ventana
 	}
 
