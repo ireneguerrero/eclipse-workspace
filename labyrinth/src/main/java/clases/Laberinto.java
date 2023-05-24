@@ -49,7 +49,7 @@ public class Laberinto {
 	            };
 	            break;
 	        case 4:
-	            this.nivel = 3;
+	            this.nivel = 4;
 	            this.celdas = new Celda[][] {
 	            	{new Muro(), new Muro(), new Muro(), new Muro(), new Muro(), new Muro(), new Muro()},
 	            	{new Muro(), new Celda(), new Celda(), new Celda(), new Celda(), new Celda(), new Celda()},//inicio

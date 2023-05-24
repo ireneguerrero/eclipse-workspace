@@ -11,10 +11,6 @@ public class ElementoCelda extends ElementoConNombreEImagen {
 		super(nombre, imagen);
 		this.sonido = sonido;
 	}
-	
-//	public ElementoCelda() {
-//		
-//	}
 
 	public Clip getSonido() {
 		return sonido;
