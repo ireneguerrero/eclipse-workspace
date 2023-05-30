@@ -1,13 +1,23 @@
 package interfaces;
 
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 import clases.Cliente;
 import java.awt.GridBagLayout;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.GridBagConstraints;
+import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.Insets;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 
 public class ElementoListaUsuario extends JPanel {
@@ -59,6 +69,41 @@ public class ElementoListaUsuario extends JPanel {
 		add(labelTelefono, gbc_labelTelefono);
 		ventana = v;
 		usuarioActual = c;
+		
+//		ArrayList<Capitulo> capitulos=new ArrayList<Capitulo>();
+//		capitulos.add(new Capitulo("assd",2 ...));
+//		capitulos.add(new Capitulo("assd",2 ...));
+//		capitulos.add(new Capitulo("assd",2 ...));
+//		capitulos.add(new Capitulo("assd",2 ...));
+//		
+//		for(short i=0;i<capitulos.size();i++) {
+//			contenedorElementos.add(new ElementoListaCapitulo(ventana,capitulos.get(i)));
+//		}
+		
+		btnNewButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				super.mouseClicked(e);
+				JOptionPane.showMessageDialog(ventana, usuarioActual.getEmail(), usuarioActual.getNombre(), JOptionPane.INFORMATION_MESSAGE);
+			}
+		});
+		
+		JScrollPane lista = new JScrollPane();
+        add(lista, BorderLayout.CENTER);
+
+        JPanel contenedorElementos=new JPanel();
+        lista.setViewportView(contenedorElementos);
+        contenedorElementos.setLayout(new BoxLayout(contenedorElementos));
+try {
+            ArrayList<Cliente> clientes=Cliente.getTodos();
+            for(short i=0;i<clientes.size();i++) {
+                contenedorElementos.add(
+                    new ElementoListaUsuario(ventana.clientes.get(i));
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+		
 	}
 
 }
