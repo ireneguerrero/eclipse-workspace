@@ -25,21 +25,6 @@ public class Main {
 
 //		Ventana v = new Ventana();
 
-		File carpeta = new File("./");
-		if (carpeta.isDirectory()) {
-			File[] hijos = carpeta.listFiles();
-			for (short i = 0; i < hijos.length; i++) {
-				File hijoActual = hijos[i];
-				if (hijoActual.isDirectory()) {
-
-				} else {
-					System.out.println(hijoActual.getAbsolutePath() + " : " + hijoActual.length() + " : "
-							+ LocalDateTime.ofEpochSecond(hijoActual.lastModified() / 1000, 0,
-									ZoneOffset.systemDefault().getRules().getOffset(Instant.now())));
-				}
-			}
-		}
-
 //		File archivo = new File("./noExisto.txt");
 //		System.out.println("Existe el archivo: " + archivo.exists());
 //		try {
@@ -111,5 +96,23 @@ public class Main {
 //		} catch (SQLException e) {
 //			e.printStackTrace();
 //		}
+		recorridoRecursivo(new File("./"));
+	}
+
+	public static void recorridoRecursivo(File carpeta) {
+//		File carpeta = new File("./");
+		if (carpeta.isDirectory()) {
+			File[] hijos = carpeta.listFiles();
+			for (short i = 0; i < hijos.length; i++) {
+				File hijoActual = hijos[i];
+				if (hijoActual.isDirectory()) {
+					recorridoRecursivo(hijoActual);
+				} else {
+					System.out.println(hijoActual.getAbsolutePath() + " : " + hijoActual.length() + " : "
+							+ LocalDateTime.ofEpochSecond(hijoActual.lastModified() / 1000, 0,
+									ZoneOffset.systemDefault().getRules().getOffset(Instant.now())));
+				}
+			}
+		}
 	}
 }
