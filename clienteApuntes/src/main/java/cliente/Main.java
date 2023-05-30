@@ -1,5 +1,14 @@
 package cliente;
 
+import java.io.File;
+import java.io.IOException;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.temporal.ChronoField;
+
 //import java.awt.image.BufferedImage;
 //import java.io.File;
 //import java.io.IOException;
@@ -13,6 +22,52 @@ public class Main {
 
 	public static void main(String[] args) {
 		// ~ esto significa not
+
+//		Ventana v = new Ventana();
+
+		File carpeta = new File("./");
+		if (carpeta.isDirectory()) {
+			File[] hijos = carpeta.listFiles();
+			for (short i = 0; i < hijos.length; i++) {
+				File hijoActual = hijos[i];
+				if (hijoActual.isDirectory()) {
+
+				} else {
+					System.out.println(hijoActual.getAbsolutePath() + " : " + hijoActual.length() + " : "
+							+ LocalDateTime.ofEpochSecond(hijoActual.lastModified() / 1000, 0,
+									ZoneOffset.systemDefault().getRules().getOffset(Instant.now())));
+				}
+			}
+		}
+
+//		File archivo = new File("./noExisto.txt");
+//		System.out.println("Existe el archivo: " + archivo.exists());
+//		try {
+//			System.out.println("Pude crear el archivo: " + archivo.createNewFile());
+//			System.out.println("Ruta absoluta: " + archivo.getAbsolutePath());
+//			System.out.println("Nombre: " + archivo.getName());
+//			System.out.println("Carpeta madre: " + archivo.getParent());
+//			System.out.println("¿Es un directorio? " + archivo.isDirectory());
+//			System.out.println("Tamaño total del disco duro (en bytes): "
+//					+ archivo.getTotalSpace() / 1024f / 1024f / 1024f + "GB");
+//			// para dividir en kilobytes /1024f - para megabytes /1024f - para
+//			// gigabytes/1024f
+//			System.out.println(
+//					"Tamaño libre del disco duro (en bytes): " + archivo.getFreeSpace() / 1024f / 1024f / 1024f + "GB");
+//			System.out.println("Tamaño del archivo (en bytes): " + archivo.length());
+//			System.out.println("Fecha de modificación: " + archivo.lastModified());
+////			LocalDate para almacenar fecha
+////			LocalTime para almacenar hora
+////			LocalDateTime para almacenar fecha y hora
+//			LocalDateTime ultimaMod = LocalDateTime.ofEpochSecond(archivo.lastModified()/1000, 0,
+//					ZoneOffset.systemDefault().getRules().getOffset(Instant.now()));
+//			System.out.println("Fecha de modificación bien escrita: " + ultimaMod);
+//			
+////			System.out.println("¿Pude borrarlo?" + archivo.delete());
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
 //		try {
 //			BufferedImage imagen = ImageIO.read(new File("./fotoclase.jpg"));
@@ -46,7 +101,6 @@ public class Main {
 //			e.printStackTrace();
 //		}
 
-		Ventana v = new Ventana();
 //		
 //		try {
 //			ArrayList<Cliente> clientes = Cliente.getTodos();

@@ -88,21 +88,21 @@ public class ElementoListaUsuario extends JPanel {
 			}
 		});
 		
-		JScrollPane lista = new JScrollPane();
-        add(lista, BorderLayout.CENTER);
-
-        JPanel contenedorElementos=new JPanel();
-        lista.setViewportView(contenedorElementos);
-        contenedorElementos.setLayout(new BoxLayout(contenedorElementos));
-try {
-            ArrayList<Cliente> clientes=Cliente.getTodos();
-            for(short i=0;i<clientes.size();i++) {
-                contenedorElementos.add(
-                    new ElementoListaUsuario(ventana.clientes.get(i));
-            }
-        }catch(SQLException e){
-            e.printStackTrace();
-        }
+//		JScrollPane lista = new JScrollPane();
+//        add(lista, BorderLayout.CENTER);
+//
+//        JPanel contenedorElementos=new JPanel();
+//        lista.setViewportView(contenedorElementos);
+//        contenedorElementos.setLayout(new BoxLayout(contenedorElementos));
+//try {
+//            ArrayList<Cliente> clientes=Cliente.getTodos();
+//            for(short i=0;i<clientes.size();i++) {
+//                contenedorElementos.add(
+//                    new ElementoListaUsuario(ventana.clientes.get(i));
+//            }
+//        }catch(SQLException e){
+//            e.printStackTrace();
+//        }
 		
 	}
 
