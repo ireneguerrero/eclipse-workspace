@@ -5,6 +5,10 @@ import java.awt.BorderLayout;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
+
+import auxiliares.interfaz.BotonAzul;
+import auxiliares.interfaz.BotonRojo;
+
 import javax.swing.BoxLayout;
 
 public class PantallaListado extends PanelMadre {
@@ -20,16 +24,16 @@ public class PantallaListado extends PanelMadre {
 		JPanel panel = new JPanel();
 		add(panel, BorderLayout.SOUTH);
 		
-		JButton btnNewButton_3 = new JButton("New button");
+		BotonAzul btnNewButton_3 = new BotonAzul("New button");
 		panel.add(btnNewButton_3);
 		
-		JButton btnNewButton_2 = new JButton("New button");
+		BotonAzul btnNewButton_2 = new BotonAzul("New button");
 		panel.add(btnNewButton_2);
 		
-		JButton btnNewButton_1 = new JButton("New button");
+		BotonRojo btnNewButton_1 = new BotonRojo("New button");
 		panel.add(btnNewButton_1);
 		
-		JButton btnNewButton = new JButton("New button");
+		BotonRojo btnNewButton = new BotonRojo("New button");
 		panel.add(btnNewButton);
 		
 		JScrollPane lista = new JScrollPane();

@@ -8,6 +8,8 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import java.awt.Color;
+import java.awt.Cursor;
+
 import javax.swing.JPasswordField;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -16,6 +18,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
 
+import auxiliares.interfaz.BotonAzul;
 import clases.Cliente;
 import exceptions.ClienteNoExisteException;
 import exceptions.ContraseñaInvalidaException;
@@ -85,15 +88,13 @@ public class PantallaLogin extends PanelMadre {
 		botonLogin.setBounds(491, 259, 119, 43);
 		add(botonLogin);
 
-		JButton botonRegis = new JButton("La sombrita");
+		BotonAzul botonRegis=new BotonAzul("La sombrita");
 		botonRegis.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				ventana.cambiarAPantalla(PantallaRegistro.class);
 			}
 		});
-		botonRegis.setBackground(new Color(74, 146, 176));
-		botonRegis.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		botonRegis.setToolTipText("Pínchame pa registrarce");
 		botonRegis.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
