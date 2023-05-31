@@ -100,7 +100,7 @@ public class PantallaLogin extends PanelMadre {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		botonRegis.setBounds(84, 139, 119, 43);
+		botonRegis.setBounds(237, 107, 119, 43);
 		add(botonRegis);
 
 		campoContraseña = new JPasswordField();

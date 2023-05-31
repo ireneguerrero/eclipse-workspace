@@ -23,7 +23,7 @@ public class Main {
 	public static void main(String[] args) {
 		// ~ esto significa not
 
-//		Ventana v = new Ventana();
+		Ventana v = new Ventana();
 
 //		File archivo = new File("./noExisto.txt");
 //		System.out.println("Existe el archivo: " + archivo.exists());
