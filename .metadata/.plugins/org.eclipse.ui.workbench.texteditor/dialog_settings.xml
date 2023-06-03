@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="new Zord"/>
+		<item key="selection" value="cambiarAPantalla"/>
 		<list key="findhistory">
+			<item value="cambiarAPantalla"/>
 			<item value="ry {"/>
 			<item value="new zordº"/>
 			<item value="new zord"/>
