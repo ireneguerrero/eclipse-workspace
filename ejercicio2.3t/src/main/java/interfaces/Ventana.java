@@ -14,7 +14,6 @@ import javax.swing.JTextField;
 
 import clases.Funciones;
 import exceptions.GeneroVacioException;
-import exceptions.NombreConNumerosException;
 import exceptions.NombreVacioException;
 
 import java.awt.event.MouseAdapter;
