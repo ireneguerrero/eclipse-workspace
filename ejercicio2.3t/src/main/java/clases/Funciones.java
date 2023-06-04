@@ -1,6 +1,7 @@
 package clases;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Desktop;
 import java.awt.Graphics;
@@ -26,6 +27,7 @@ public class Funciones {
 	public static void abrirSegundaPantalla() {
 		JFrame segundaVentana = new JFrame("Lista de Capítulos");
 		segundaVentana.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		segundaVentana.setBackground(new Color(224, 255, 255));
 		segundaVentana.setSize(600, 400);
 		segundaVentana.setLocationRelativeTo(null);
 
