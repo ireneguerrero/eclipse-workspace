@@ -13,6 +13,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
 import clases.Funciones;
+import exceptions.GeneroVacioException;
 import exceptions.NombreVacioException;
 
 import java.awt.event.MouseAdapter;
@@ -25,6 +26,8 @@ public class Ventana extends JFrame {
 	private JRadioButton hombreRadioButton;
 	private JRadioButton mujerRadioButton;
 	private JRadioButton otroRadioButton;
+	private JButton btnEntrar;
+	private ButtonGroup grupoRadioButtons;
 
 	public Ventana() {
 		// Configuración de la ventana principal
@@ -41,32 +44,35 @@ public class Ventana extends JFrame {
 		hombreRadioButton = new JRadioButton("Hombre");
 		mujerRadioButton = new JRadioButton("Mujer");
 		otroRadioButton = new JRadioButton("Otro");
-		final JButton btnEntrar = new JButton("Entrar");
+		// Agrupar los RadioButtons para que solo se pueda seleccionar uno
+		grupoRadioButtons = new ButtonGroup();
+		grupoRadioButtons.add(hombreRadioButton);
+		grupoRadioButtons.add(mujerRadioButton);
+		grupoRadioButtons.add(otroRadioButton);
+		btnEntrar = new JButton("Entrar");
 		btnEntrar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				String usuario = datosNombre.getText();
-	            try {
-	                validarNombre();
-	            } catch (NombreVacioException e1) {
-	                // TODO Auto-generated catch block
-	                e1.printStackTrace();
-	            }
-	             if (usuario.isEmpty()) {
-	                 JOptionPane.showMessageDialog(null,"Debes ingresar un nombre de usuario ", "Error",
-	                         JOptionPane.ERROR_MESSAGE);
-	                } else {
-	                    Funciones.abrirSegundaPantalla();
-	                }
-	             }
-	        });
+				try {
+			        validarNombre();
+			        verificarSeleccionRadioButton(grupoRadioButtons);
+			    } catch (NombreVacioException e1) {
+			    } catch (GeneroVacioException e2) {
+			    }
+				
+				if (usuario.isEmpty()) {
+					JOptionPane.showMessageDialog(null, "Debes ingresar un nombre de usuario ", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				} else if(grupoRadioButtons.getSelection() == null){
+					JOptionPane.showMessageDialog(null, "Debes seleccionar una opción.", "Error", JOptionPane.ERROR_MESSAGE);
+				} else {
+			        Funciones.abrirSegundaPantalla();
+			    }
 
-
-		// Agrupar los RadioButtons para que solo se pueda seleccionar uno
-		ButtonGroup grupoRadioButtons = new ButtonGroup();
-		grupoRadioButtons.add(hombreRadioButton);
-		grupoRadioButtons.add(mujerRadioButton);
-		grupoRadioButtons.add(otroRadioButton);
+				
+			}
+		});
 
 		// Panel para el formulario de nombre y género
 		JPanel formularioPanel = new JPanel();
@@ -104,6 +110,12 @@ public class Ventana extends JFrame {
 		String nombre = datosNombre.getText();
 		if (nombre.matches(".*\\d.*")) {
 			throw new NombreVacioException("El nombre no debe contener números");
+		}
+	}
+
+	public void verificarSeleccionRadioButton(ButtonGroup buttonGroup) throws GeneroVacioException {
+		if (buttonGroup.getSelection() == null) {
+			throw new GeneroVacioException("Debes seleccionar una opción.");
 		}
 	}
 }
