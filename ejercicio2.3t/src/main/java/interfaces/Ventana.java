@@ -14,6 +14,7 @@ import javax.swing.JTextField;
 
 import clases.Funciones;
 import exceptions.GeneroVacioException;
+import exceptions.NombreConNumerosException;
 import exceptions.NombreVacioException;
 
 import java.awt.event.MouseAdapter;
@@ -64,8 +65,8 @@ public class Ventana extends JFrame {
 				try {
 			        validarNombre();
 			        verificarSeleccionRadioButton(grupoRadioButtons);
-			    } catch (NombreVacioException e1) {
-			    } catch (GeneroVacioException e2) {
+			    } catch (NombreVacioException | GeneroVacioException e1) {
+			    	e1.getMessage();
 			    }
 				
 				if (usuario.isEmpty()) {
@@ -125,7 +126,7 @@ public class Ventana extends JFrame {
 	private void validarNombre() throws NombreVacioException {
 		String nombre = datosNombre.getText();
 		if (nombre.matches(".*\\d.*")) {
-			throw new NombreVacioException("El nombre no debe contener números");
+			throw new NombreVacioException("Debes poner un nombre");
 		}
 	}
 
