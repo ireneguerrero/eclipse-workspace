@@ -6,6 +6,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\irene\OneDrive\Escritorio\EjercicioProgrAnimeFav-main"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\main"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\labyrinth\src\main\java"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\labyrinth-main"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\DAW\Programacion\labyrinth"/>
 			<item value="C:\Users\irene\eclipse-workspace\solucion.recuperacion.2do.examen\solucion.recuperacion.2do.examen"/>
 			<item value="C:\Users\irene\eclipse-workspace\solucion.tamagotchi.daw\solucion.tamagotchi.daw"/>
