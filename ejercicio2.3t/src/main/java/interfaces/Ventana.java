@@ -18,6 +18,7 @@ import exceptions.NombreVacioException;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.Color;
 
 public class Ventana extends JFrame {
 
@@ -30,6 +31,7 @@ public class Ventana extends JFrame {
 	private ButtonGroup grupoRadioButtons;
 
 	public Ventana() {
+		setBackground(new Color(224, 255, 255));
 		// Configuración de la ventana principal
 		setTitle("Black Clover");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -41,15 +43,20 @@ public class Ventana extends JFrame {
 		JLabel tituloLabel = new JLabel("Black Clover");
 		JLabel imagenLabel = new JLabel(new ImageIcon("./imagenes/gif.gif"));
 		datosNombre = new JTextField(20);
+		datosNombre.setBackground(new Color(221, 160, 221));
 		hombreRadioButton = new JRadioButton("Hombre");
+		hombreRadioButton.setBackground(new Color(221, 160, 221));
 		mujerRadioButton = new JRadioButton("Mujer");
+		mujerRadioButton.setBackground(new Color(221, 160, 221));
 		otroRadioButton = new JRadioButton("Otro");
+		otroRadioButton.setBackground(new Color(221, 160, 221));
 		// Agrupar los RadioButtons para que solo se pueda seleccionar uno
 		grupoRadioButtons = new ButtonGroup();
 		grupoRadioButtons.add(hombreRadioButton);
 		grupoRadioButtons.add(mujerRadioButton);
 		grupoRadioButtons.add(otroRadioButton);
 		btnEntrar = new JButton("Entrar");
+		btnEntrar.setBackground(new Color(221, 160, 221));
 		btnEntrar.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -76,14 +83,23 @@ public class Ventana extends JFrame {
 
 		// Panel para el formulario de nombre y género
 		JPanel formularioPanel = new JPanel();
+		formularioPanel.setBackground(new Color(224, 255, 255));
 		formularioPanel.setLayout(new GridLayout(3, 2));
-		formularioPanel.add(new JLabel("Nombre:"));
+		JLabel label = new JLabel("Nombre:");
+		label.setBackground(new Color(224, 255, 255));
+		formularioPanel.add(label);
 		formularioPanel.add(datosNombre);
-		formularioPanel.add(new JLabel("Género:"));
+		JLabel label_1 = new JLabel("Género:");
+		label_1.setBackground(new Color(224, 255, 255));
+		formularioPanel.add(label_1);
 		formularioPanel.add(hombreRadioButton);
-		formularioPanel.add(new JLabel(""));
+		JLabel label_2 = new JLabel("");
+		label_2.setBackground(new Color(224, 255, 255));
+		formularioPanel.add(label_2);
 		formularioPanel.add(mujerRadioButton);
-		formularioPanel.add(new JLabel(""));
+		JLabel label_3 = new JLabel("");
+		label_3.setBackground(new Color(224, 255, 255));
+		formularioPanel.add(label_3);
 		formularioPanel.add(otroRadioButton);
 
 		// Panel para la imagen y el botón de entrar
