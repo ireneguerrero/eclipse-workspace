@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\OneDrive\Escritorio\EjercicioProgrAnimeFav-main"/>
 			<item value="C:\Users\irene\eclipse-workspace\combate.a.muerte.en.cenec"/>
 			<item value="C:\Users\irene\eclipse-workspace\cliente\src\main\java\clases\Cliente.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes17\src\main\java\apuntes17\Main.java"/>
@@ -16,7 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\apuntes12\src\main\java\apuntes12\Apuntes12.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes10\src\main\java\apuntes10\apuntes10.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\ejercicios.recursividad.y.strings\src\main\java\ejercicios\recursividad\y\strings\RelacionEjercicios2.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\apuntes9\src\main\java\apuntes9\Funciones.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ejercicio2.3t"/>
 			<item value="labyrinth"/>
 			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
@@ -73,9 +74,9 @@
 			<item value="examen.greedit"/>
 			<item value="ejercicio.2.t.2.irene.guerrero"/>
 			<item value="battle.royal"/>
-			<item value="apuntes14"/>
 		</list>
 		<list key="name">
+			<item value="ejercicio2.3t"/>
 			<item value="labyrinth"/>
 			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
@@ -90,9 +91,9 @@
 			<item value="ejercicio.2.t.2.irene.guerrero"/>
 			<item value="battle.royal"/>
 			<item value="apuntes14"/>
-			<item value="examen.1.trimestre.2.irene.guerrero"/>
 		</list>
 		<list key="artifactId">
+			<item value="ejercicio2.3t"/>
 			<item value="labyrinth"/>
 			<item value="actividadWBuilder"/>
 			<item value="apuntes18"/>
@@ -107,7 +108,6 @@
 			<item value="ejercicio.2.t.2.irene.guerrero"/>
 			<item value="battle.royal"/>
 			<item value="apuntes14"/>
-			<item value="examen.1.trimestre.2.irene.guerrero"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
