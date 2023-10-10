@@ -3,6 +3,8 @@ package ahorcado.irene;
 import java.util.Random;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Main {
 	//TODO: ventana que pida la letra y ventana que de el resultado (JOptionPanel)
 	public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class Main {
 			letrasAdivinadas[i] = '_';
 		}
 
-		System.out.println("¡Hola! ¡Vamos a jugar al juego del ahorcado!");
+		JOptionPane.showMessageDialog(null, "¡Hola! ¡Vamos a jugar al juego del ahorcado!");
 
 		do {
 

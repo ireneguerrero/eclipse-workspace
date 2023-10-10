@@ -6700,3 +6700,9 @@ java.lang.Exception: The project description file (.project) for 'Ejercicio2_3_T
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2023-10-10 10:49:57.428
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-10-10 10:53:33.026
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-10-10 10:53:33.030
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
