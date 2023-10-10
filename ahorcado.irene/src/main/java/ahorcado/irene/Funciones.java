@@ -1,7 +1,10 @@
 package ahorcado.irene;
 
+import javax.swing.JOptionPane;
+
 public class Funciones {
-	public static void dibujarAhorcado(int intentos) {
+	public static String dibujarAhorcado(byte intentos) {
+		StringBuilder dibujo = new StringBuilder();
 		switch (intentos) {
 		case 6:
 			System.out.println(" ________");
@@ -67,6 +70,7 @@ public class Funciones {
 			System.out.println("|________");
 			break;
 		}
+		return dibujo.toString();
 	}
 
 	//determinar si todas las letras de la palabra secreta han sido adivinadas
@@ -78,4 +82,13 @@ public class Funciones {
 		}
 		return true;
 	}
+	
+	public static char obtenerLetra(String mensaje) {
+        String entrada = JOptionPane.showInputDialog(mensaje);
+        if (entrada == null || entrada.length() == 0) {
+            // El usuario presionó "Cancelar" o no ingresó nada
+            return obtenerLetra(mensaje);
+        }
+        return entrada.charAt(0);
+    }
 }
