@@ -6,6 +6,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Main {
+	//TODO:aventura gráfica simple
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String[] palabras = { "java", "gato", "perro", "mundo" };
@@ -23,8 +24,7 @@ public class Main {
 
 		do {
 			String palabraActual = new String(letrasAdivinadas);
-			String mensaje = "Palabra secreta: " + palabraActual + "\n" + Funciones.dibujarAhorcado(intentos)
-					+ "\nIntentos restantes: " + intentos + "\nIngresa una letra:";
+			String mensaje = "Palabra secreta: " + palabraActual + "\nIntentos restantes: " + intentos + "\nIngresa una letra:";
 			char letra = Character.toLowerCase(Funciones.obtenerLetra(mensaje));
 			boolean letraAdivinada = false;
 
