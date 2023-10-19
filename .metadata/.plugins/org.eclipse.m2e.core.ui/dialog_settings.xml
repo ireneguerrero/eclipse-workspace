@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="apuntes1DAM"/>
 			<item value="ahorcado.irene"/>
 			<item value="ejercicio2.3t"/>
 			<item value="labyrinth"/>
@@ -73,7 +74,6 @@
 			<item value="examen.cazadores"/>
 			<item value="examen."/>
 			<item value="examen.greedit"/>
-			<item value="ejercicio.2.t.2.irene.guerrero"/>
 		</list>
 		<list key="name">
 			<item value="ejercicio2.3t"/>
@@ -93,6 +93,7 @@
 			<item value="apuntes14"/>
 		</list>
 		<list key="artifactId">
+			<item value="apuntes1DAM"/>
 			<item value="ahorcado.irene"/>
 			<item value="ejercicio2.3t"/>
 			<item value="labyrinth"/>
@@ -107,7 +108,6 @@
 			<item value="examen.cazadores"/>
 			<item value="examen.greedit"/>
 			<item value="ejercicio.2.t.2.irene.guerrero"/>
-			<item value="battle.royal"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
