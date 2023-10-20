@@ -8,13 +8,13 @@ import java.sql.Statement;
 public class CrearBaseDeDatos {
 
 	public static void main(String[] args) {
-		Connection conn=null;
-		Statement stmt=null;
-		String sql="CREATE DATABASE empresa";
-		
+		Connection conn = null;
+		Statement stmt = null;
+		String sql = "CREATE DATABASE empresa";
+
 		try {
-			conn=DriverManager.getConnection("jdbc:mysql://localhost/", "root", "");
-			stmt=conn.createStatement();
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/", "root", "");
+			stmt = conn.createStatement();
 			stmt.execute(sql);
 			System.out.println("La base de datos empresa ok");
 			conn.close();
@@ -22,7 +22,6 @@ public class CrearBaseDeDatos {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
 
 	}
 
