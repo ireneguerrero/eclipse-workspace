@@ -59,11 +59,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ejecutar.notepad"/>
 			<item value="layout"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ejecutar.notepad"/>
 			<item value="layout"/>
 		</list>
 		<list key="projectNameTemplate">
