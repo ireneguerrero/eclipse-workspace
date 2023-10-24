@@ -29,10 +29,10 @@ public class Main {
 				System.out.print((char) c);
 			}
 			is.close();
-			InputStream isError=p.getErrorStream();
+			InputStream isError = p.getErrorStream();
 			int cError;
-			while((cError=isError.read())!=-1) {
-				System.out.println((char)cError);
+			while ((cError = isError.read()) != -1) {
+				System.out.println((char) cError);
 			}
 			isError.close();
 		} catch (IOException e) {
