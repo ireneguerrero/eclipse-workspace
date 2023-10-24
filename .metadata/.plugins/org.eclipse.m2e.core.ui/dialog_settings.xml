@@ -59,55 +59,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="apuntes1DAM"/>
-			<item value="ahorcado.irene"/>
-			<item value="ejercicio2.3t"/>
-			<item value="labyrinth"/>
-			<item value="actividadWBuilder"/>
-			<item value="apuntes18"/>
-			<item value="cliente"/>
-			<item value="apuntes17"/>
-			<item value="apuntes16"/>
-			<item value="apuntes15"/>
-			<item value="examen.feria.corregido"/>
-			<item value="examen.feria.irene.guerrero"/>
-			<item value="examen.cazadores"/>
-			<item value="examen."/>
-			<item value="examen.greedit"/>
+			<item value="layout"/>
 		</list>
 		<list key="name">
-			<item value="ejercicio2.3t"/>
-			<item value="labyrinth"/>
-			<item value="actividadWBuilder"/>
-			<item value="apuntes18"/>
-			<item value="cliente"/>
-			<item value="apuntes17"/>
-			<item value="apuntes16"/>
-			<item value="apuntes15"/>
-			<item value="examen.feria.corregido"/>
-			<item value="examen.feria.irene.guerrero"/>
-			<item value="examen.cazadores"/>
-			<item value="examen.greedit"/>
-			<item value="ejercicio.2.t.2.irene.guerrero"/>
-			<item value="battle.royal"/>
-			<item value="apuntes14"/>
 		</list>
 		<list key="artifactId">
-			<item value="apuntes1DAM"/>
-			<item value="ahorcado.irene"/>
-			<item value="ejercicio2.3t"/>
-			<item value="labyrinth"/>
-			<item value="actividadWBuilder"/>
-			<item value="apuntes18"/>
-			<item value="cliente"/>
-			<item value="apuntes17"/>
-			<item value="apuntes16"/>
-			<item value="apuntes15"/>
-			<item value="examen.feria.corregido"/>
-			<item value="examen.feria.irene.guerrero"/>
-			<item value="examen.cazadores"/>
-			<item value="examen.greedit"/>
-			<item value="ejercicio.2.t.2.irene.guerrero"/>
+			<item value="layout"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
