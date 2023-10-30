@@ -44,5 +44,18 @@ public class Ventana6VariosJPane extends JFrame {
 	public static void main(String[] args) {
 		Ventana6VariosJPane ventana = new Ventana6VariosJPane();
 		ventana.inicializarVentana();
+		String[] botones = { "Aceptar", "Cancelar", "Siguiente", "Anterior" };
+		int y = 50;
+		for (String boton : botones) {
+			ventana.agregarBoton(boton, 50, y);
+			y = y + 50;
+		}
+
+//		for (int i = 1; i < 4; i++) {
+//			ventana.agregarBoton("Botón " + i, 50, y);
+//			y = y + 50;
+//		}
+
+		ventana.agregarBoton("Redimensionar", 50, y);
 	}
 }
