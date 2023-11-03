@@ -11,7 +11,8 @@ public class InsertarDatos {
 		Connection conn = null;
 		Statement stmt = null;
 
-		String sql = "INSERT INTO clientes (id, nif, nombre, edad)" + "VALUES (1,'111111','Irene','22')";
+		String sql = "INSERT INTO clientes (id, nif, nombre, edad)"
+				+ "VALUES (1,'111111','Irene','22'), (2,'2222','Cristina','34'), (3,'3333','Manue','47'), (4,'4444','Pablo','30'), (5,'5555','Raúl','27')";
 
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/empresa", "root", "");
