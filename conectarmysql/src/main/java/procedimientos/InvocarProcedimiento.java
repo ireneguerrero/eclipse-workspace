@@ -14,7 +14,8 @@ public class InvocarProcedimiento {
 
 		try {
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/empresa", "root", "");
-			cstmt = conn.prepareCall("call ObtenerClientes()");
+//			cstmt = conn.prepareCall("call ObtenerClientes()");
+			cstmt = conn.prepareCall("call CalcularEdad()");
 			cstmt.execute();
 
 			ResultSet rs = cstmt.getResultSet();
