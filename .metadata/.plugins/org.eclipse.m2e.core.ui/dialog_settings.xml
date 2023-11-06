@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\conectarmysql\src\main\java\dbclase"/>
 			<item value="C:\Users\irene\eclipse-workspace\ejecutar"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\EjercicioProgrAnimeFav-main"/>
 			<item value="C:\Users\irene\eclipse-workspace\combate.a.muerte.en.cenec"/>
@@ -16,7 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\apuntes11\src\main\java\apuntes11\Apuntes11.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\ejercicio.1.t.2.irene.guerrero\src\main\java\ejercicio1t2\QuienEsQuienYMarquesina.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes12\src\main\java\apuntes12\Apuntes12.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\apuntes10\src\main\java\apuntes10\apuntes10.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="procedimientos"/>
 			<item value="interfaces.graficas"/>
 			<item value="tiendaPC"/>
 			<item value="ejecutar.notepad"/>
@@ -67,6 +68,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="procedimientos"/>
 			<item value="interfaces.graficas"/>
 			<item value="tiendaPC"/>
 			<item value="ejecutar.notepad"/>

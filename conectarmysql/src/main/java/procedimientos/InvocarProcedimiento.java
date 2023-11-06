@@ -14,7 +14,7 @@ public class InvocarProcedimiento {
 		CallableStatement cstmt = null;
 
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost/phoneland", "root", "");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost/empresa", "root", "");
 //			cstmt = conn.prepareCall("call ObtenerClientes()");
 			cstmt = conn.prepareCall("call CalcularEdad(?,?)");
 			cstmt.setInt(1, 2000);
