@@ -37,6 +37,13 @@ public class ContenedorBotonesVentana extends JFrame {
 					String textoBoton = ((JButton) e.getSource()).getText();
 					etiquetaBienvenido.setText("Bienvenido: " + textoBoton + " otra vez");
 					etiquetaMensaje.setText("Mensaje: " + textoBoton);
+
+					// Ventana nueva
+					JFrame nuevaVentana = new JFrame("Nueva ventana");
+					nuevaVentana.setSize(300, 200);
+					nuevaVentana.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+					nuevaVentana.add(new JLabel("Has pulsado el botón " + textoBoton));
+					nuevaVentana.setVisible(true);
 				}
 			});
 
