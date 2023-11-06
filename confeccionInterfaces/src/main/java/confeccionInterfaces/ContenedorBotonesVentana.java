@@ -29,7 +29,7 @@ public class ContenedorBotonesVentana extends JFrame {
 
 		// Bucle donde creamos los diferentes botones
 		for (int i = 1; i <= 3; i++) {
-			JButton boton = new JButton("Botón " + i);
+			JButton boton = new JButton("Ventana " + i);
 			// Le añadimos el listener para cada boton
 			boton.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
