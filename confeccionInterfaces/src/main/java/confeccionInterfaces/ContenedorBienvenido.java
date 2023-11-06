@@ -12,6 +12,7 @@ import javax.swing.SwingUtilities;
 
 public class ContenedorBienvenido extends JFrame {
 	JLabel etiquetaMensaje;
+	JLabel etiquetaBienvenido;
 
 	public ContenedorBienvenido() {
 		setTitle("Ejemplo con dos contenedores");
@@ -20,9 +21,11 @@ public class ContenedorBienvenido extends JFrame {
 		// Creamos los contenedores
 		JPanel panelBotones = new JPanel();
 		JPanel panelMensaje = new JPanel();
+		JPanel panelBienvenida = new JPanel();
 
 		// El mensaje que aparece en la ventana
 		etiquetaMensaje = new JLabel("Mensaje: ");
+		etiquetaBienvenido = new JLabel("Bienvenido: ");
 
 		// Bucle donde creamos los diferentes botones
 		for (int i = 1; i <= 3; i++) {
@@ -32,6 +35,7 @@ public class ContenedorBienvenido extends JFrame {
 				public void actionPerformed(ActionEvent e) {
 					// Extraemos el nombre del boton
 					String textoBoton = ((JButton) e.getSource()).getText();
+					etiquetaBienvenido.setText("Bienvenido: " + textoBoton + " otra vez");
 					etiquetaMensaje.setText("Mensaje: " + textoBoton);
 				}
 			});
@@ -39,8 +43,13 @@ public class ContenedorBienvenido extends JFrame {
 			panelBotones.add(boton);
 		}
 		setLayout(new BorderLayout());
-		add(panelBotones, BorderLayout.SOUTH);
-		add(panelMensaje, BorderLayout.CENTER);
+
+		add(panelBienvenida, BorderLayout.NORTH);
+		panelBienvenida.add(etiquetaBienvenido);
+
+		add(panelBotones, BorderLayout.CENTER);
+
+		add(panelMensaje, BorderLayout.SOUTH);
 		panelMensaje.add(etiquetaMensaje);
 
 		pack(); // Ajusta el tamaño de los elementos del JFrame
