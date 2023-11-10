@@ -13,7 +13,6 @@
     <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
     <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ejercicio7.RueDelPercebe"/>
     <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="ejercicio.7.irene.guerrero"/>
-    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-nPlantas 3 -nPisos 4 -conCartel"/>
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ejercicio.7.irene.guerrero"/>
     <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dsun.stdout.encoding=UTF-8"/>
 </launchConfiguration>
