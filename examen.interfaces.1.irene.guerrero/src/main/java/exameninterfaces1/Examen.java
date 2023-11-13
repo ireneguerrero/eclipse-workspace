@@ -2,7 +2,6 @@ package exameninterfaces1;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -48,7 +47,7 @@ public class Examen extends JFrame implements ActionListener {
 					// Extraemos el nombre del botón
 					String textoBotonNorte = ((JButton) e.getSource()).getText();
 					etiquetaMensaje.setText("Se ha pulsado el: " + textoBotonNorte);
-					
+
 					// Creamos la ventana emergente
 					JFrame ventanaEmergenteNorte = new JFrame("Ventana " + textoBotonNorte);
 					ventanaEmergenteNorte.setSize(300, 200);
@@ -169,5 +168,7 @@ public class Examen extends JFrame implements ActionListener {
 			}
 		});
 	}
+
+	// No me ha dado tiempo de hacer el extra
 
 }

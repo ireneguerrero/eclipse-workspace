@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="examen.interfaces.1.irene.guerrero"/>
 			<item value="simulacroInterfaces"/>
 			<item value="simulacro"/>
 			<item value="hilos"/>
@@ -72,6 +73,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="examen.interfaces.1.irene.guerrero"/>
 			<item value="simulacroInterfaces"/>
 			<item value="simulacro"/>
 			<item value="hilos"/>
