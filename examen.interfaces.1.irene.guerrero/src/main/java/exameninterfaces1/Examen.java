@@ -1,6 +1,7 @@
 package exameninterfaces1;
 
 import java.awt.BorderLayout;
+import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,9 +14,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class Examen extends JFrame {
-	private JMenuBar mb;
-	private JMenu menu1;
+public class Examen extends JFrame implements ActionListener {
+	private JMenuBar menuBar;
+	private JMenu botones;
 	private JMenuItem mi1, mi2, mi3, mi4, mi5, mi6;
 	JLabel etiquetaMensaje;
 
@@ -77,6 +78,36 @@ public class Examen extends JFrame {
 			panelSur.add(botonSur);
 		}
 
+		// Creamos el menú
+		menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		botones = new JMenu("Botones");
+		menuBar.add(botones);
+
+		mi1 = new JMenuItem("Botón 1");
+		mi1.addActionListener(this);
+		botones.add(mi1);
+
+		mi2 = new JMenuItem("Botón 2");
+		mi2.addActionListener(this);
+		botones.add(mi2);
+
+		mi3 = new JMenuItem("Botón 3");
+		mi3.addActionListener(this);
+		botones.add(mi3);
+
+		mi4 = new JMenuItem("Botón 4");
+		mi4.addActionListener(this);
+		botones.add(mi4);
+
+		mi5 = new JMenuItem("Botón 5");
+		mi5.addActionListener(this);
+		botones.add(mi5);
+
+		mi6 = new JMenuItem("Botón 6");
+		mi6.addActionListener(this);
+		botones.add(mi6);
+
 		// Creamos el panel principal
 		setLayout(new BorderLayout());
 		add(panelNorte, BorderLayout.NORTH);
@@ -84,13 +115,26 @@ public class Examen extends JFrame {
 		add(panelSur, BorderLayout.SOUTH);
 		panelSur.add(etiquetaMensaje);
 
-		setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		Container contentPane = getContentPane();
+		if (e.getSource() == mi1) {
+			for (int i = 1; i == 1; i++) {
+				JButton boton = new JButton("Botón " + i);
+				String textoBoton = ((JButton) e.getSource()).getText();
+				etiquetaMensaje.setText("Se ha pulsado el: " + textoBoton);
+			}
+		}
+
 	}
 
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
-				new Examen();
+				new Examen().setVisible(true);
+				;
 			}
 		});
 	}

@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 
 public class Ventana6VariosJPane extends JFrame {
 	
@@ -40,6 +41,10 @@ public class Ventana6VariosJPane extends JFrame {
 	}
 
 	public static void main(String[] args) {
-
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new Ventana6VariosJPane();
+			}
+		});
 	}
 }
