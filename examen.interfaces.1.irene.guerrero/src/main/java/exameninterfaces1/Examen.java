@@ -1,6 +1,7 @@
 package exameninterfaces1;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,6 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -25,6 +27,7 @@ public class Examen extends JFrame implements ActionListener {
 		setTitle("Examen Práctico");
 		setSize(400, 300);
 		setBounds(100, 100, 300, 300);
+		setLocation(300, 300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		// Creamos los contenedores
@@ -37,17 +40,27 @@ public class Examen extends JFrame implements ActionListener {
 		// Creamos los botones del norte
 		for (int i = 1; i <= 3; i++) {
 			JButton botonNorte = new JButton("Botón " + i);
+			botonNorte.setBackground(Color.cyan);
+			botonNorte.setForeground(Color.black);
 			// Añadimos el listener para cada botón
 			botonNorte.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
 					// Extraemos el nombre del botón
 					String textoBotonNorte = ((JButton) e.getSource()).getText();
-
+					etiquetaMensaje.setText("Se ha pulsado el: " + textoBotonNorte);
+					
 					// Creamos la ventana emergente
 					JFrame ventanaEmergenteNorte = new JFrame("Ventana " + textoBotonNorte);
 					ventanaEmergenteNorte.setSize(300, 200);
-					ventanaEmergenteNorte.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 					ventanaEmergenteNorte.add(new JLabel("Se ha pulsado el: " + textoBotonNorte));
+
+					// No me sale el botón cerrar, se ha intentado
+					JButton cerrar = new JButton("Cerrar");
+					cerrar.addActionListener(new ActionListener() {
+						public void actionPerformed(ActionEvent e) {
+							ventanaEmergenteNorte.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+						}
+					});
 					ventanaEmergenteNorte.setVisible(true);
 				}
 			});
@@ -58,6 +71,8 @@ public class Examen extends JFrame implements ActionListener {
 		// Creamos los botones del sur
 		for (int i = 4; i <= 6; i++) {
 			JButton botonSur = new JButton("Botón " + i);
+			botonSur.setBackground(Color.cyan);
+			botonSur.setForeground(Color.black);
 			// Añadimos el listener para cada botón
 			botonSur.addActionListener(new ActionListener() {
 				public void actionPerformed(ActionEvent e) {
@@ -77,6 +92,13 @@ public class Examen extends JFrame implements ActionListener {
 
 			panelSur.add(botonSur);
 		}
+
+		// Creamos el panel principal
+		setLayout(new BorderLayout());
+		add(panelNorte, BorderLayout.NORTH);
+		panelNorte.add(etiquetaMensaje);
+		add(panelSur, BorderLayout.SOUTH);
+		panelSur.add(etiquetaMensaje);
 
 		// Creamos el menú
 		menuBar = new JMenuBar();
@@ -108,24 +130,33 @@ public class Examen extends JFrame implements ActionListener {
 		mi6.addActionListener(this);
 		botones.add(mi6);
 
-		// Creamos el panel principal
-		setLayout(new BorderLayout());
-		add(panelNorte, BorderLayout.NORTH);
-		panelNorte.add(etiquetaMensaje);
-		add(panelSur, BorderLayout.SOUTH);
-		panelSur.add(etiquetaMensaje);
-
 	}
 
+	// Ventana emergente con el menú
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		Container contentPane = getContentPane();
 		if (e.getSource() == mi1) {
-			for (int i = 1; i == 1; i++) {
-				JButton boton = new JButton("Botón " + i);
-				String textoBoton = ((JButton) e.getSource()).getText();
-				etiquetaMensaje.setText("Se ha pulsado el: " + textoBoton);
-			}
+			JOptionPane.showMessageDialog(mi1, "Has pulsado el botón 1");
+		}
+
+		if (e.getSource() == mi2) {
+			JOptionPane.showMessageDialog(mi2, "Has pulsado el botón 2");
+		}
+
+		if (e.getSource() == mi3) {
+			JOptionPane.showMessageDialog(mi3, "Has pulsado el botón 3");
+		}
+
+		if (e.getSource() == mi4) {
+			JOptionPane.showMessageDialog(mi4, "Has pulsado el botón 4");
+		}
+
+		if (e.getSource() == mi5) {
+			JOptionPane.showMessageDialog(mi5, "Has pulsado el botón 5");
+		}
+
+		if (e.getSource() == mi6) {
+			JOptionPane.showMessageDialog(mi6, "Has pulsado el botón 6");
 		}
 
 	}

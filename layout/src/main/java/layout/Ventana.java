@@ -50,21 +50,21 @@ public class Ventana {
 //		});
 		
 		//ventana boton 3
-//		JFrame ventana = new JFrame("Ventana con Botón");
-//		String nombre = "Irene";
-//
-//		ventana.setSize(400, 200);
-//		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//
-//		JButton boton = new JButton("Haz click aquí");
-//		ventana.add(boton);
-//		boton.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//				String nombre = JOptionPane.showInputDialog(ventana, "Dime tu nombre", "Datos personales",
-//						JOptionPane.QUESTION_MESSAGE);
-//			}
-//		});
-//		ventana.setVisible(true);
+		JFrame ventana = new JFrame("Ventana con Botón");
+		String nombre = "Irene";
+
+		ventana.setSize(400, 200);
+		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		JButton boton = new JButton("Haz click aquí");
+		ventana.add(boton);
+		boton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String nombre = JOptionPane.showInputDialog(ventana, "Dime tu nombre", "Datos personales",
+						JOptionPane.QUESTION_MESSAGE);
+			}
+		});
+		ventana.setVisible(true);
 		
 	}
 
