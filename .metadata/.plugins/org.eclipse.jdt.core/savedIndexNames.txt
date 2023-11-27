@@ -20,7 +20,6 @@ INDEX VERSION 1.131+C:\Users\irene\eclipse-workspace\.metadata\.plugins\org.ecli
 1087036984.index
 834454750.index
 2932855264.index
-3959137331.index
 828908510.index
 2455759720.index
 4074870524.index
