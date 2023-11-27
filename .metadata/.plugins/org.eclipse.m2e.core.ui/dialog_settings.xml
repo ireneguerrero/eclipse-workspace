@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="componentes.basicos"/>
 			<item value="ficheros.y.directorios"/>
 			<item value="hilos.entregar"/>
 			<item value="examen.practico.aadd.irene.guerrero"/>
@@ -73,11 +74,11 @@
 			<item value="interfaces.graficas"/>
 			<item value="tiendaPC"/>
 			<item value="ejecutar.notepad"/>
-			<item value="layout"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="componentes.basicos"/>
 			<item value="ficheros.y.directorios"/>
 			<item value="hilos.entregar"/>
 			<item value="examen.practico.aadd.irene.guerrero"/>
@@ -92,7 +93,6 @@
 			<item value="interfaces.graficas"/>
 			<item value="tiendaPC"/>
 			<item value="ejecutar.notepad"/>
-			<item value="layout"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
