@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class Ejercicio2JavaXScenBuilder extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("escena1.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("Scene1.fxml"));
 		primaryStage.setTitle("Mi Aplicación JavaFX");
 		primaryStage.setScene(new Scene(root, 600, 400));
 		primaryStage.show();
