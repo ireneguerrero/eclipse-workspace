@@ -1,28 +1,91 @@
 package componentes.basicos;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
 public class EjercicioTextField extends JFrame {
 
+	private JTextField nombreTextField, edadTextField, direccionTextField, ciudadTextField, provinciaTextField;
+	private JLabel nombreLabel, edadLabel, lblDireccion, ciudadLabel, provinciaLabel;
+
 	public EjercicioTextField() {
-		setTitle("Ejemplo JTextField");
+		setTitle("Ejemplo JTextField con nombre y apellidos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLayout(null);
-		setSize(300, 100);
+		getContentPane().setLayout(null);
+		setSize(510, 259);
 
-		JLabel label = new JLabel("Indica tu nombre: ");
-		label.setBounds(10, 10, 150, 20);
-		add(label);
+		// Creación de label
+		nombreLabel = new JLabel("Indica tu nombre:");
+		nombreLabel.setBounds(10, 10, 150, 20);
+		getContentPane().add(nombreLabel);
 
-		JTextField textField = new JTextField();
-		textField.setBounds(160, 10, 120, 20);
-		add(textField);
+		edadLabel = new JLabel("Indica tu edad:");
+		edadLabel.setBounds(10, 40, 120, 20);
+		getContentPane().add(edadLabel);
+
+		lblDireccion = new JLabel("Dirección");
+		lblDireccion.setBounds(10, 71, 150, 20);
+		getContentPane().add(lblDireccion);
+
+		ciudadLabel = new JLabel("Ciudad");
+		ciudadLabel.setBounds(10, 98, 150, 20);
+		getContentPane().add(ciudadLabel);
+
+		provinciaLabel = new JLabel("Provincia");
+		provinciaLabel.setBounds(10, 129, 150, 20);
+		getContentPane().add(provinciaLabel);
+
+		// Creación de text fields
+		nombreTextField = new JTextField();
+		nombreTextField.setBounds(160, 10, 175, 20);
+		getContentPane().add(nombreTextField);
+
+		edadTextField = new JTextField();
+		edadTextField.setBounds(296, 40, 39, 20);
+		getContentPane().add(edadTextField);
+
+		direccionTextField = new JTextField();
+		direccionTextField.setBounds(160, 71, 175, 20);
+		getContentPane().add(direccionTextField);
+
+		ciudadTextField = new JTextField();
+		ciudadTextField.setBounds(160, 98, 175, 20);
+		getContentPane().add(ciudadTextField);
+
+		provinciaTextField = new JTextField();
+		provinciaTextField.setBounds(160, 129, 175, 20);
+		getContentPane().add(provinciaTextField);
+
+		// Creación de un botón Aceptar
+		JButton btnAceptar = new JButton("Aceptar");
+		btnAceptar.setBounds(10, 160, 100, 30);
+		getContentPane().add(btnAceptar);
+
+		// Configuración de la acción para el botón Aceptar
+		btnAceptar.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				mostrarDialogo();
+			}
+		});
 
 		setLocationRelativeTo(null);
+	}
 
+	// Método para mostrar el diálogo con los datos introducidos
+	private void mostrarDialogo() {
+		String mensaje = "Datos introducidos:\n" + "Nombre: " + nombreTextField.getText() + "\n" + "Edad: "
+				+ edadTextField.getText() + "\n" + "Dirección: " + direccionTextField.getText() + "\n" + "Ciudad: "
+				+ ciudadTextField.getText() + "\n" + "Provincia: " + provinciaTextField.getText();
+
+		JOptionPane.showMessageDialog(this, mensaje, "Datos Introducidos", JOptionPane.INFORMATION_MESSAGE);
 	}
 
 	public static void main(String[] args) {
@@ -30,5 +93,4 @@ public class EjercicioTextField extends JFrame {
 			new EjercicioTextField().setVisible(true);
 		});
 	}
-
 }
