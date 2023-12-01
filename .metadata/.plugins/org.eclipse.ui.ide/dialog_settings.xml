@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\irene\OneDrive\Escritorio\masFicheros"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\AccesoADatos\1er trimestre\Modelvistacontrolador\conectarmysql"/>
 			<item value="C:\Users\irene\eclipse-workspace\ataque.goblin"/>
 			<item value="C:\Users\irene\eclipse-workspace\que.viene.la.pelona"/>
