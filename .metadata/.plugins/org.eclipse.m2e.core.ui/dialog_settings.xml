@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
 			<item value="simulacro.acceso.a.datos.ficheros"/>
 			<item value="componentes.basicos"/>
@@ -73,11 +74,11 @@
 			<item value="hilos"/>
 			<item value="confeccionInterfaces"/>
 			<item value="procedimientos"/>
-			<item value="interfaces.graficas"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
 			<item value="simulacro.acceso.a.datos.ficheros"/>
 			<item value="componentes.basicos"/>
@@ -92,7 +93,6 @@
 			<item value="hilos"/>
 			<item value="confeccionInterfaces"/>
 			<item value="procedimientos"/>
-			<item value="interfaces.graficas"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

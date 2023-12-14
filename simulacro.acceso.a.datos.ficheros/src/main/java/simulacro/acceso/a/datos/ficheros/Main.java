@@ -18,7 +18,6 @@ public class Main {
 		boolean salir = false;
 		String ruta = "c:\\simulacro\\";
 		String nombreArchivo = "simulacro.txt";
-		
 		String rutaFichero = "c:\\simulacro\\simulacro.txt";
 		do {
 			salir = false;
@@ -64,9 +63,9 @@ public class Main {
 				break;
 			case 3:
 
-				File fichero2 = new File(rutaFichero);
-				if (fichero2.exists()) {
-					boolean borrado = fichero2.delete();
+				fichero = new File(rutaFichero);
+				if (fichero.exists()) {
+					boolean borrado = fichero.delete();
 					if (borrado) {
 						System.out.println("El fichero ha sido borrado con éxito");
 					} else {
@@ -87,7 +86,7 @@ public class Main {
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
-					System.out.println("La carpeta ha sido borrado");
+					System.out.println("La carpeta ha sido borrada");
 				} else {
 					System.out.println("La carpeta no existe o no es una carpeta");
 				}

@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\irene\OneDrive\Escritorio\SimulacroExamenGasparu"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes11"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes10"/>
 			<item value="C:\Users\irene\eclipse-workspace\ejercicio.1.t.2.irene.guerrero"/>
