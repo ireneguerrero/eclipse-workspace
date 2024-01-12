@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\libreConfiguracion2TrimestreApuntes"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\Multihilo\Multihilo\src\main\java\hilo"/>
 			<item value="C:\Users\irene\eclipse-workspace\hilos"/>
 			<item value="C:\Users\irene\eclipse-workspace\simulacroAccesoADatos"/>
 			<item value="C:\Users\irene\eclipse-workspace\conectarmysql\src\main\java\dbclase"/>
@@ -15,8 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\corregido.ejercicio.2.t.2.irene.guerrero\src\main\java\tamagotchi\Main.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes14\src\main\java\apuntes14\Apuntes14.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\sopa.de.letras\src\main\java\sopa\de\letras\SopaDeLetras.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\apuntes13\src\main\java\apuntes13\Apuntes13.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\apuntes11\src\main\java\apuntes11\Apuntes11.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="libreConfigEj3Tri2"/>
+			<item value="libreConfigEj1Tri2"/>
+			<item value="libreConfiguracion2TrimestreApuntes"/>
+			<item value="tema3psp"/>
+			<item value="examen.final.psp.irene.guerrero"/>
+			<item value="examen.final.aadd.irene.guerrero"/>
 			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
 			<item value="simulacro.acceso.a.datos.ficheros"/>
@@ -68,16 +74,16 @@
 			<item value="examen.practico.aadd.irene.guerrero"/>
 			<item value="conectarphoneland"/>
 			<item value="examen.psp.1.irene.guerrero"/>
-			<item value="examen.interfaces.1.irene.guerrero"/>
-			<item value="simulacroInterfaces"/>
-			<item value="simulacro"/>
-			<item value="hilos"/>
-			<item value="confeccionInterfaces"/>
-			<item value="procedimientos"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="libreConfigEj3Tri2"/>
+			<item value="libreConfigEj1Tri2"/>
+			<item value="libreConfiguracion2TrimestreApuntes"/>
+			<item value="tema3psp"/>
+			<item value="examen.final.psp.irene.guerrero"/>
+			<item value="examen.final.aadd.irene.guerrero"/>
 			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
 			<item value="simulacro.acceso.a.datos.ficheros"/>
@@ -87,12 +93,6 @@
 			<item value="examen.practico.aadd.irene.guerrero"/>
 			<item value="conectarphoneland"/>
 			<item value="examen.psp.1.irene.guerrero"/>
-			<item value="examen.interfaces.1.irene.guerrero"/>
-			<item value="simulacroInterfaces"/>
-			<item value="simulacro"/>
-			<item value="hilos"/>
-			<item value="confeccionInterfaces"/>
-			<item value="procedimientos"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

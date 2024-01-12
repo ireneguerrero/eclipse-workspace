@@ -33,7 +33,7 @@ public class Main {
 
 				break;
 			case 1:
-
+				//crear carpeta
 				File fichero = new File(ruta);
 				if (fichero.mkdir()) {
 					System.out.println("Carpeta creada");

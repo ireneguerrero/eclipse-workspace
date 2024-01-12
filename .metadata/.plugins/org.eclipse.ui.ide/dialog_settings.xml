@@ -6,6 +6,12 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\irene\OneDrive\Escritorio\tiendaverregistros"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\Multihilo\Multihilo"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\parcial_1trimestre\parcial_1trimestre"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\ejercicios de ficheros"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\Repaso.segundo.examen.casa"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\FicherosYSimulacros"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\SimulacroExamenGasparu"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes11"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes10"/>
@@ -68,9 +74,8 @@
 		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1664830912584"/>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.m2e"/>
 		</list>
 	</section>

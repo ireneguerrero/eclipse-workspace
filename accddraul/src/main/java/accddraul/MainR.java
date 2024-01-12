@@ -13,27 +13,25 @@ import org.apache.commons.io.FileUtils;
 public class MainR {
 	public static void main(String[] args) {
 		try {
-			Scanner sc = new Scanner(System.in);
-			byte opcion;
-			boolean salir = false;
+			Scanner scanner = new Scanner(System.in);
+			String opcion;
 			String ruta = "C:\\";
 
 			do {
-				salir = false;
 				System.out.println("Seleccione una opción:");
-				System.out.println("1 - Crear carpeta");
-				System.out.println("2 - Crear fichero");
-				System.out.println("3 - Borrar fichero");
-				System.out.println("4 - Borrar carpeta");
-				System.out.println("5 - Leer fichero");
-				System.out.println("0 - Salir");
+				System.out.println("A - Crear carpeta");
+				System.out.println("B - Crear fichero");
+				System.out.println("C - Borrar fichero");
+				System.out.println("D - Borrar carpeta");
+				System.out.println("E - Leer fichero");
+				System.out.println("F - Salir");
 
-				opcion = Byte.parseByte(ruta);
+				opcion = scanner.nextLine().toUpperCase();
 
 				switch (opcion) {
-				case 1:
+				case "A":
 					System.out.println("Introduzca el nombre de la carpeta:");
-					String nombreCarpeta = sc.nextLine();
+					String nombreCarpeta = scanner.nextLine();
 					File carpeta = new File(ruta + nombreCarpeta);
 
 					if (!carpeta.exists()) {
@@ -44,29 +42,29 @@ public class MainR {
 					}
 					break;
 
-				case 2:
+				case "B":
 					System.out.println("Introduzca el nombre de la carpeta:");
-					String nombreCarpetaFichero = sc.nextLine();
+					String nombreCarpetaFichero = scanner.nextLine();
 					File carpetaFichero = new File(ruta + nombreCarpetaFichero);
 
 					if (carpetaFichero.exists()) {
 						System.out.println("Introduzca el nombre del fichero:");
-						String nombreFichero = sc.nextLine();
+						String nombreFichero = scanner.nextLine();
 
 						try (BufferedWriter bw = new BufferedWriter(
 								new FileWriter(ruta + nombreCarpetaFichero + "\\" + nombreFichero + ".txt"))) {
 							System.out.println("Introduzca el nombre:");
-							String nombre = sc.nextLine();
+							String nombre = scanner.nextLine();
 							bw.write("Nombre: " + nombre);
 							bw.newLine();
 
 							System.out.println("Introduzca los apellidos:");
-							String apellidos = sc.nextLine();
+							String apellidos = scanner.nextLine();
 							bw.write("Apellidos: " + apellidos);
 							bw.newLine();
 
 							System.out.println("Introduzca la dirección:");
-							String direccion = sc.nextLine();
+							String direccion = scanner.nextLine();
 							bw.write("Dirección: " + direccion);
 
 							System.out.println("Fichero creado correctamente.");
@@ -78,21 +76,20 @@ public class MainR {
 					}
 					break;
 
-				case 3:
+				case "C":
 					System.out.println("Introduzca el nombre de la carpeta:");
-					String nombreCarpetaBorrarFichero = sc.nextLine();
+					String nombreCarpetaBorrarFichero = scanner.nextLine();
 					File carpetaBorrarFichero = new File(ruta + nombreCarpetaBorrarFichero);
 
 					if (carpetaBorrarFichero.exists()) {
 						System.out.println("Introduzca el nombre del fichero a borrar:");
-						String nombreFicheroBorrar = sc.nextLine();
+						String nombreFicheroBorrar = scanner.nextLine();
 						File ficheroBorrar = new File(
 								ruta + nombreCarpetaBorrarFichero + "\\" + nombreFicheroBorrar + ".txt");
 
 						if (ficheroBorrar.exists()) {
 							ficheroBorrar.delete();
-							System.out
-									.println("El fichero " + nombreFicheroBorrar + ".txt se ha borrado correctamente.");
+							System.out.println("El fichero " + nombreFicheroBorrar + ".txt se ha borrado correctamente.");
 						} else {
 							System.out.println("El fichero " + nombreFicheroBorrar + ".txt no existe.");
 						}
@@ -101,9 +98,9 @@ public class MainR {
 					}
 					break;
 
-				case 4:
+				case "D":
 					System.out.println("Introduzca el nombre de la carpeta a borrar:");
-					String nombreCarpetaBorrar = sc.nextLine();
+					String nombreCarpetaBorrar = scanner.nextLine();
 					File carpetaBorrar = new File(ruta + nombreCarpetaBorrar);
 
 					if (carpetaBorrar.exists()) {
@@ -115,14 +112,14 @@ public class MainR {
 					}
 					break;
 
-				case 5:
+				case "E":
 					System.out.println("Introduzca el nombre de la carpeta:");
-					String nombreCarpetaLeer = sc.nextLine();
+					String nombreCarpetaLeer = scanner.nextLine();
 					File carpetaLeer = new File(ruta + nombreCarpetaLeer);
 
 					if (carpetaLeer.exists()) {
 						System.out.println("Introduzca el nombre del fichero a leer:");
-						String nombreFicheroLeer = sc.nextLine();
+						String nombreFicheroLeer = scanner.nextLine();
 						File ficheroLeer = new File(ruta + nombreCarpetaLeer + "\\" + nombreFicheroLeer + ".txt");
 
 						if (ficheroLeer.exists()) {
@@ -142,8 +139,8 @@ public class MainR {
 					}
 					break;
 
-				case 0:
-					salir = true;
+				case "F":
+					System.out.println("Saliendo...");
 					break;
 
 				default:
@@ -151,9 +148,9 @@ public class MainR {
 					break;
 				}
 
-			} while (!salir);
+			} while (!opcion.equals("F"));
 
-			sc.close();
+			scanner.close();
 
 		} catch (IOException ioe) {
 			System.out.println("Error en la operación.");
