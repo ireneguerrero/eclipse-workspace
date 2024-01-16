@@ -12,7 +12,6 @@ module tema5interfaces {
 	opens ej5 to javafx.graphics, javafx.controls, javafx.fxml;
 	opens ej6 to javafx.graphics, javafx.controls, javafx.fxml;
 	opens ej7 to javafx.graphics, javafx.controls, javafx.fxml;
-//	opens ej8 to javafx.graphics, javafx.controls, javafx.fxml;
-//	opens ej9 to javafx.graphics, javafx.controls, javafx.fxml;
-//	opens ej10 to javafx.graphics, javafx.controls, javafx.fxml;
+	opens ej9 to javafx.graphics, javafx.controls, javafx.fxml;
+	opens ej10 to javafx.graphics, javafx.controls, javafx.fxml;
 }
