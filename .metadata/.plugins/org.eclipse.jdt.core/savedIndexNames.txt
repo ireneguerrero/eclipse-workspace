@@ -16,8 +16,8 @@ INDEX VERSION 1.131+C:\Users\irene\eclipse-workspace\.metadata\.plugins\org.ecli
 904505729.index
 706970911.index
 1995737493.index
-3733997715.index
 2663355596.index
+3733997715.index
 1984353644.index
 630321446.index
 4280961309.index
@@ -26,9 +26,7 @@ INDEX VERSION 1.131+C:\Users\irene\eclipse-workspace\.metadata\.plugins\org.ecli
 216955775.index
 2398966296.index
 664727392.index
-2853770872.index
 2681861481.index
-3292639131.index
 1865797976.index
 828908510.index
 2652524927.index
@@ -45,7 +43,6 @@ INDEX VERSION 1.131+C:\Users\irene\eclipse-workspace\.metadata\.plugins\org.ecli
 494119506.index
 834454750.index
 2004112647.index
-2860081714.index
 2609648.index
 2659214313.index
 1833697306.index

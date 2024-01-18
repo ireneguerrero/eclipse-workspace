@@ -18,7 +18,7 @@ public class VerDatosFabricante {
 
 		// Configurar la sesión en el contexto actual
 		ThreadLocalSessionContext context = new ThreadLocalSessionContext((SessionFactoryImplementor) sessionFactory);
-		context.bind(sessionFactory.openSession());
+		ThreadLocalSessionContext.bind(sessionFactory.openSession());
 
 		try {
 			// Obtener la sesión actual
@@ -45,7 +45,7 @@ public class VerDatosFabricante {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			context.unbind(sessionFactory);
+			ThreadLocalSessionContext.unbind(sessionFactory);
 			sessionFactory.close();
 		}
 	}

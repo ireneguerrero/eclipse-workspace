@@ -17,7 +17,6 @@ public class Main {
 
 		// Configurar la sesión en el contexto actual
 		ThreadLocalSessionContext context = new ThreadLocalSessionContext((SessionFactoryImplementor) sessionFactory);
-		context.bind(sessionFactory.openSession());
 
 		try {
 			// Crear objeto fabricante
