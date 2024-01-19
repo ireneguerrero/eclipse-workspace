@@ -11,7 +11,7 @@ public class Main {
 	public static void main(String[] args) {
 		// Configurar la sesión de Hibernate
 		SessionFactory sessionFactory = new Configuration()
-				.configure() // Llama al fichero hibernate.cgf.xml
+				.configure() // Llama al fichero hibernate.cgf.xml 
 				// .configure("hibernate.cfg.xml") //Ruta del archivo de configuración de Hibernate
 				.buildSessionFactory(); // Construir la sesión de Hibernate
 
