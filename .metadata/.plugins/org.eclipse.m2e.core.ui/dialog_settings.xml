@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\accesoDatosEj1Tri2"/>
 			<item value="C:\Users\irene\eclipse-workspace\libreConfiguracion2TrimestreApuntes"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\Multihilo\Multihilo\src\main\java\hilo"/>
 			<item value="C:\Users\irene\eclipse-workspace\hilos"/>
@@ -16,7 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\examen.tiendainformatica.daw\src\main\java\clases\Monitor.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\corregido.ejercicio.2.t.2.irene.guerrero\src\main\java\tamagotchi\Main.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes14\src\main\java\apuntes14\Apuntes14.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\sopa.de.letras\src\main\java\sopa\de\letras\SopaDeLetras.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="accesoDatosEj4AvanzadosTri2"/>
 			<item value="libreConfigEj3Tri2"/>
 			<item value="libreConfigEj1Tri2"/>
 			<item value="libreConfiguracion2TrimestreApuntes"/>
@@ -73,11 +74,11 @@
 			<item value="hilos.entregar"/>
 			<item value="examen.practico.aadd.irene.guerrero"/>
 			<item value="conectarphoneland"/>
-			<item value="examen.psp.1.irene.guerrero"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="accesoDatosEj4AvanzadosTri2"/>
 			<item value="libreConfigEj3Tri2"/>
 			<item value="libreConfigEj1Tri2"/>
 			<item value="libreConfiguracion2TrimestreApuntes"/>
@@ -92,7 +93,6 @@
 			<item value="hilos.entregar"/>
 			<item value="examen.practico.aadd.irene.guerrero"/>
 			<item value="conectarphoneland"/>
-			<item value="examen.psp.1.irene.guerrero"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -107,6 +107,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
