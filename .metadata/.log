@@ -1,4 +1,4 @@
-!SESSION 2024-01-25 23:29:20.955 -----------------------------------------------
+!SESSION 2024-01-25 23:37:02.374 -----------------------------------------------
 eclipse.buildId=4.30.0.20231201-1200
 java.version=21.0.2
 java.vendor=Eclipse Adoptium
@@ -7,9 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 This is a continuation of log file C:\Users\irene\eclipse-workspace\.metadata\.bak_0.log
-Created Time: 2024-01-25 23:30:57.623
+Created Time: 2024-01-25 23:37:28.857
 
-!ENTRY org.apache.log4j 4 0 2024-01-25 23:30:57.623
+!ENTRY org.apache.log4j 4 0 2024-01-25 23:37:28.857
 !MESSAGE org.eclipse.xtext.resource.impl.ResourceServiceProviderRegistryImpl  - Erroneous resource service provider registered for 'archive:file:/C:/Users/irene/OneDrive/Escritorio/-/2DAM/DesarrolloDeInterfaces/1er%20trimestre/openjfx-21.0.1_windows-x64_bin-sdk/javafx-sdk-21.0.1/lib/javafx.controls.jar!/com/sun/javafx/scene/control/skin/modena/blackOnWhite.css'. Removing it from the registry.
 
 !STACK 0
@@ -35,7 +35,7 @@ java.lang.ClassCastException: The type null is not a valid interface org.eclipse
 	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl$3.run(Storage2UriMapperJavaImpl.java:678)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-!ENTRY org.apache.log4j 4 0 2024-01-25 23:30:58.250
+!ENTRY org.apache.log4j 4 0 2024-01-25 23:37:29.008
 !MESSAGE org.eclipse.xtext.internal.ResourceServiceProviderDescriptor  - com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: java.lang.IncompatibleClassChangeError: Class org.eclipse.fx.core.guice.FXLoggerListener does not implement the requested interface com.google.inject.spi.TypeListener (occurred in org.eclipse.fx.ide.css.cssext.ui.CssExtDslExecutableExtensionFactory)
 
 !STACK 1
@@ -267,7 +267,7 @@ Caused by: java.lang.IncompatibleClassChangeError: Class org.eclipse.fx.core.gui
 	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2191)
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2081)
 	... 190 more
-!SUBENTRY 1 org.eclipse.fx.ide.css.cssext.ui 4 0 2024-01-25 23:30:58.251
+!SUBENTRY 1 org.eclipse.fx.ide.css.cssext.ui 4 0 2024-01-25 23:37:29.008
 !MESSAGE com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: java.lang.IncompatibleClassChangeError: Class org.eclipse.fx.core.guice.FXLoggerListener does not implement the requested interface com.google.inject.spi.TypeListener (occurred in org.eclipse.fx.ide.css.cssext.ui.CssExtDslExecutableExtensionFactory)
 !STACK 0
 com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: com.google.common.util.concurrent.ExecutionError: java.lang.IncompatibleClassChangeError: Class org.eclipse.fx.core.guice.FXLoggerListener does not implement the requested interface com.google.inject.spi.TypeListener
@@ -495,7 +495,7 @@ Caused by: java.lang.IncompatibleClassChangeError: Class org.eclipse.fx.core.gui
 	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2081)
 	... 190 more
 
-!ENTRY org.apache.log4j 4 0 2024-01-25 23:30:58.253
+!ENTRY org.apache.log4j 4 0 2024-01-25 23:37:29.009
 !MESSAGE org.eclipse.xtext.resource.impl.ResourceServiceProviderRegistryImpl  - Erroneous resource service provider registered for 'archive:file:/C:/Users/irene/.p2/pool/plugins/org.eclipse.fx.ide.css.jfx8_3.8.0.202204150904.jar!/jfx8.cssext'. Removing it from the registry.
 
 !STACK 0
@@ -520,38 +520,31 @@ java.lang.ClassCastException: The type null is not a valid interface org.eclipse
 	at org.eclipse.xtext.ui.resource.Storage2UriMapperJavaImpl$3.run(Storage2UriMapperJavaImpl.java:678)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:49.877
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+!ENTRY org.eclipse.ui 2 2 2024-01-25 23:37:31.397
+!MESSAGE Invalid property category path: org.eclipse.papyrus.infra.gmfdiag.preferences.properties.generalcategory (bundle: org.eclipse.papyrus.infra.services.resourceloading.ui, propertyPage: org.eclipse.papyrus.infra.services.resourceloading.properties.ModelLoadingPreferencePage2)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.002
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+!ENTRY org.eclipse.epp.mpc.core 1 0 2024-01-25 23:38:41.421
+!MESSAGE Some entries could not be found on the Marketplace
+!SUBENTRY 1 org.eclipse.epp.mpc.core 1 0 2024-01-25 23:38:41.421
+!MESSAGE Node not found: '5548474'
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.077
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.137
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.205
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.362
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.616
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.795
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:50.910
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:51.011
-!MESSAGE The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:52.727
-!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-01-25 23:31:52.741
-!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!ENTRY org.eclipse.equinox.p2.core 4 0 2024-01-25 23:39:07.134
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at https://download.eclipse.org/eclipse/updates/4.25-P-builds/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:409)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:388)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:279)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:126)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:110)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$1.runModal(PreloadingRepositoryHandler.java:84)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2024-01-25 23:39:07.135
+!MESSAGE No repository found at https://download.eclipse.org/eclipse/updates/4.25-P-builds/.

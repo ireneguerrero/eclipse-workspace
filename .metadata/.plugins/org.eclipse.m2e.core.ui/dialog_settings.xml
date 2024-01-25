@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="accesoDatosTema3Reto"/>
 			<item value="accesoDatosEj4AvanzadosTri2"/>
 			<item value="libreConfigEj3Tri2"/>
 			<item value="libreConfigEj1Tri2"/>
@@ -73,11 +74,11 @@
 			<item value="ficheros.y.directorios"/>
 			<item value="hilos.entregar"/>
 			<item value="examen.practico.aadd.irene.guerrero"/>
-			<item value="conectarphoneland"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="accesoDatosTema3Reto"/>
 			<item value="accesoDatosEj4AvanzadosTri2"/>
 			<item value="libreConfigEj3Tri2"/>
 			<item value="libreConfigEj1Tri2"/>
@@ -92,7 +93,6 @@
 			<item value="ficheros.y.directorios"/>
 			<item value="hilos.entregar"/>
 			<item value="examen.practico.aadd.irene.guerrero"/>
-			<item value="conectarphoneland"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
