@@ -22,6 +22,9 @@ public class Productos {
 	@ManyToOne
 	@JoinColumn(name = "id_fabricante", nullable = false)
 	private Fabricante fabricante;
+	
+//	@OneToMany(mappedBy = "producto", cascade = CascadeType.ALL)
+//	private List<Compras> compras = new ArrayList<>();
 
 	public Productos() {
 
