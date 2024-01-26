@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database connection settings -->
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/libreria</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"> </property>
+		<property name="show_sql">true</property>
+		<property name="current_session_context_class">thread</property>
+
+		<mapping class="accesoDatosTema3Reto.Autor" />
+		<mapping class="accesoDatosTema3Reto.Categoria" />
+		<mapping class="accesoDatosTema3Reto.Cliente" />
+		<mapping class="accesoDatosTema3Reto.Libro" />
+		<mapping class="accesoDatosTema3Reto.Pedido" />
+		<mapping class="accesoDatosTema3Reto.LibroAutor" />
+		<mapping class="accesoDatosTema3Reto.LibroCategoria" />
+		<mapping class="accesoDatosTema3Reto.LibroPedido" />
+		
+	</session-factory>
+</hibernate-configuration>
