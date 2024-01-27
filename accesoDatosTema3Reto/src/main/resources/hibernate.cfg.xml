@@ -12,14 +12,12 @@
 		<property name="show_sql">true</property>
 		<property name="current_session_context_class">thread</property>
 
-		<mapping class="accesoDatosTema3Reto.Autor" />
-		<mapping class="accesoDatosTema3Reto.Categoria" />
-		<mapping class="accesoDatosTema3Reto.Cliente" />
-		<mapping class="accesoDatosTema3Reto.Libro" />
-		<mapping class="accesoDatosTema3Reto.Pedido" />
-		<mapping class="accesoDatosTema3Reto.LibroAutor" />
-		<mapping class="accesoDatosTema3Reto.LibroCategoria" />
-		<mapping class="accesoDatosTema3Reto.LibroPedido" />
+		<mapping class="modulo.Autor" />
+		<mapping class="modulo.Categoria" />
+		<mapping class="modulo.Libro" />
+		<mapping class="modulo.Cliente" />
+		<mapping class="modulo.Pedido" />
+		<mapping class="modulo.DetallePedido" />
 		
 	</session-factory>
 </hibernate-configuration>
