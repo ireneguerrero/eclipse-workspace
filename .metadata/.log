@@ -10039,3 +10039,26 @@ java.nio.file.FileSystemException: C:\Users\irene\OneDrive\Escritorio\-\2DAM\Des
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.wst.xml.ui 4 4 2024-02-05 11:09:42.706
+!MESSAGE Cannot invoke "String.lastIndexOf(int)" because "name" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "String.lastIndexOf(int)" because "name" is null
+	at org.eclipse.jdt.internal.core.NameLookup.findType(NameLookup.java:1063)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1686)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1772)
+	at org.eclipse.jdt.internal.core.JavaProject.findType(JavaProject.java:1672)
+	at org.eclipse.fx.ide.model.internal.FXCtrlEventMethod.isEventMethod(FXCtrlEventMethod.java:90)
+	at org.eclipse.fx.ide.model.internal.FXCtrlClass.getLocalEventMethods(FXCtrlClass.java:117)
+	at org.eclipse.fx.ide.model.internal.FXCtrlClass.getAllEventMethods(FXCtrlClass.java:93)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.checkControllerAttributes(FXMLValidator.java:189)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:123)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validateV1File(FXMLValidator.java:388)
+	at org.eclipse.fx.ide.fxml.editors.FXMLValidator.validate(FXMLValidator.java:333)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.validate(ReconcileStepForValidator.java:252)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ReconcileStepForValidator.reconcileModel(ReconcileStepForValidator.java:210)
+	at org.eclipse.jface.text.reconciler.AbstractReconcileStep.reconcile(AbstractReconcileStep.java:92)
+	at org.eclipse.wst.sse.ui.internal.reconcile.validator.ValidatorStrategy.reconcile(ValidatorStrategy.java:270)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DocumentRegionProcessor.process(DocumentRegionProcessor.java:323)
+	at org.eclipse.wst.sse.ui.internal.reconcile.StructuredRegionProcessor.process(StructuredRegionProcessor.java:260)
+	at org.eclipse.wst.sse.ui.internal.reconcile.DirtyRegionProcessor$BackgroundThread.run(DirtyRegionProcessor.java:694)
