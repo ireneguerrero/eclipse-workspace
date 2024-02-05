@@ -37,7 +37,6 @@
     <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="org.hibernate.context.internal.ThreadLocalSessionContext"/>
     <fullyQualifiedTypeName name="org.hibernate.engine.spi.SessionFactoryImplementor"/>
     <fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
@@ -49,7 +48,6 @@
     <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
     <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
     <fullyQualifiedTypeName name="org.hibernate.Session"/>
-    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.mysql.cj.Query"/>
     <fullyQualifiedTypeName name="org.hibernate.Query"/>
@@ -60,4 +58,6 @@
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="Modulo.Libro"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
 </qualifiedTypeNameHistroy>
