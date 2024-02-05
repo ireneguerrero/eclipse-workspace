@@ -9,39 +9,39 @@ import javafx.stage.Stage;
 
 public class EjHilo extends Application {
 
-    @Override
-    public void start(Stage primaryStage) {
-        Button btn = new Button("¡Hola soy Irene desde JavaFX!");
-        
-        StackPane root = new StackPane(); //creamos un contenedor de diseño apilado es decir
-        //crea un tipo de  nodo que permite agregar elementos como botones 
-        root.getChildren().add(btn);
+	@Override
+	public void start(Stage primaryStage) {
+		Button btn = new Button("¡Hola soy Irene desde JavaFX!");
 
-        // Crear y empezar un hilo simple
-        Thread thread = new Thread(() -> {
-            try {
-                // Dormir el hilo por 3 segundos
-                Thread.sleep(3000);
+		StackPane root = new StackPane(); // creamos un contenedor de diseño apilado es decir
+		// crea un tipo de nodo que permite agregar elementos como botones
+		root.getChildren().add(btn);
 
-                // Después de 3 segundos, actualizar la interfaz gráfica
-                Platform.runLater(() -> { //ejecuta un runnable en el hilo creado, es decir una tarea
-                	//platform es una clase que permite la ejecució de codigo en el hilo de javafx
-                    btn.setText("¡Hilo ejecutado en verdad!");
-                });
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
-        thread.start();
+		// Crear y empezar un hilo simple
+		Thread thread = new Thread(() -> {
+			try {
+				// Dormir el hilo por 3 segundos
+				Thread.sleep(3000);
 
-        Scene scene = new Scene(root, 300, 250);
+				// Después de 3 segundos, actualizar la interfaz gráfica
+				Platform.runLater(() -> { // ejecuta un runnable en el hilo creado, es decir una tarea
+					// platform es una clase que permite la ejecució de codigo en el hilo de javafx
+					btn.setText("¡Hilo ejecutado en verdad!");
+				});
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		});
+		thread.start();
 
-        primaryStage.setTitle("JavaFX Ejemplo de hilos");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
+		Scene scene = new Scene(root, 300, 250);
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+		primaryStage.setTitle("JavaFX Ejemplo de hilos");
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+	public static void main(String[] args) {
+		launch(args);
+	}
 }

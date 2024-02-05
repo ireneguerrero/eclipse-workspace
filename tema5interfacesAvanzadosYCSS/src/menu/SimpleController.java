@@ -10,18 +10,17 @@ import javafx.scene.control.MenuItem;
 
 public class SimpleController implements Initializable {
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        // Inicialización, si es necesaria
-    }
+	@Override
+	public void initialize(URL url, ResourceBundle resourceBundle) {
+		// Inicialización, si es necesaria
+	}
 
-    @FXML
-    private void handleMenuAction(ActionEvent event) {
-        // Este método se llamará cuando se seleccione una opción del menú
-        MenuItem sourceMenuItem = (MenuItem) event.getSource();
-        //al definir cada item usando MenuItem sourceMenuitem, getText
-        //muestra el texto asignado a cada botón
-        System.out.println("Ha pulsado la opción: " + sourceMenuItem.getText());
-    }
+	@FXML
+	private void handleMenuAction(ActionEvent event) {
+		// Este método se llamará cuando se seleccione una opción del menú
+		MenuItem sourceMenuItem = (MenuItem) event.getSource();
+		// al definir cada item usando MenuItem sourceMenuitem, getText
+		// muestra el texto asignado a cada botón
+		System.out.println("Ha pulsado la opción: " + sourceMenuItem.getText());
+	}
 }
-

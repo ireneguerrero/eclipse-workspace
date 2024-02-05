@@ -12,11 +12,11 @@ public class Main extends Application {
 
 	public void start(Stage primaryStage) throws IOException {
 		Parent root;
-			root = FXMLLoader.load(getClass().getResource("calculadora2.fxml"));
+		root = FXMLLoader.load(getClass().getResource("calculadora2.fxml"));
 
-			primaryStage.setTitle("Mi Aplicación JavaFX");
-			primaryStage.setScene(new Scene(root, 650, 400));
-			primaryStage.show();
+		primaryStage.setTitle("Mi Aplicación JavaFX");
+		primaryStage.setScene(new Scene(root, 650, 400));
+		primaryStage.show();
 	}
 
 	public static void main(String[] args) {
