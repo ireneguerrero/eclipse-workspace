@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\tema5interfacesAvanzadosYCSS\src\ej1\ej1.css"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\AccesoADatos\2do trimestre\oracleePrimerEjercicio\src\main\java\primerEjercicio"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\AccesoADatos\2do trimestre\oracleDAO.juan.ignacio.quintero\src\main\java\modelo"/>
 			<item value="C:\Users\irene\eclipse-workspace\accesoDatosEj1Tri2"/>
@@ -16,7 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\cliente\src\main\java\clases\Cliente.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes17\src\main\java\apuntes17\Main.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\examen.feria.irene.guerrero\src\main\java\examen\feria\irene\guerrero\Main.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\examen.tiendainformatica.daw\src\main\java\clases\Monitor.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="HospitalApp"/>
 			<item value="basicosDAO"/>
 			<item value="avanzadosDAO"/>
 			<item value="plsql"/>
@@ -73,11 +74,11 @@
 			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
 			<item value="simulacro.acceso.a.datos.ficheros"/>
-			<item value="componentes.basicos"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="HospitalApp"/>
 			<item value="basicosDAO"/>
 			<item value="avanzadosDAO"/>
 			<item value="plsql"/>
@@ -92,7 +93,6 @@
 			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
 			<item value="simulacro.acceso.a.datos.ficheros"/>
-			<item value="componentes.basicos"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

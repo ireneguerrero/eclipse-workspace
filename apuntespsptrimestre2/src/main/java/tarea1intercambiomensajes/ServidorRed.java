@@ -1,4 +1,4 @@
-package tarea2;
+package tarea1intercambiomensajes;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,8 +21,10 @@ public class ServidorRed {
 
 			InputStream input = cliente.getInputStream();
 			ObjectInputStream ois = new ObjectInputStream(input);
-			int cadenaLeida = (int) ois.readObject();
-			System.out.println("Servidor: " + (cadenaLeida*cadenaLeida));
+			String cadenaLeida = ois.readObject().toString();
+			String cadenaMin = cadenaLeida.toLowerCase();
+			System.out.println("Servidor: " + cadenaLeida);
+			System.out.println("Servidor en minúscula: " + cadenaMin);
 
 			ObjectOutputStream oos = new ObjectOutputStream(cliente.getOutputStream());
 			oos.writeObject(cadenaLeida);

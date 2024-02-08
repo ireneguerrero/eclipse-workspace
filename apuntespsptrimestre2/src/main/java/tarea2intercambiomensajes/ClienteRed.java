@@ -1,4 +1,4 @@
-package tarea2;
+package tarea2intercambiomensajes;
 
 import java.io.IOException;
 import java.io.InputStream;
