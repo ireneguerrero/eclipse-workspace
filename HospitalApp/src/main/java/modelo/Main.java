@@ -325,13 +325,9 @@ public class Main {
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
-				// Aquí no cerramos la SessionFactory ni desvinculamos el contexto de la sesión
 			}
 
 		} while (!cerrar);
-
-		// Cerramos la SessionFactory y desvinculamos el contexto de la sesión fuera del
-		// bucle principal
 		ThreadLocalSessionContext.unbind(sessionFactory);
 		sessionFactory.close();
 	}
