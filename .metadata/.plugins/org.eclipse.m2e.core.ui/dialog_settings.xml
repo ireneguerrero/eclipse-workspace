@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="tema4psp"/>
 			<item value="HospitalApp"/>
 			<item value="basicosDAO"/>
 			<item value="avanzadosDAO"/>
@@ -73,11 +74,11 @@
 			<item value="examen.final.aadd.irene.guerrero"/>
 			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
-			<item value="simulacro.acceso.a.datos.ficheros"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="tema4psp"/>
 			<item value="HospitalApp"/>
 			<item value="basicosDAO"/>
 			<item value="avanzadosDAO"/>
@@ -92,7 +93,6 @@
 			<item value="examen.final.aadd.irene.guerrero"/>
 			<item value="accddraul"/>
 			<item value="interfaces.java.swing"/>
-			<item value="simulacro.acceso.a.datos.ficheros"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
