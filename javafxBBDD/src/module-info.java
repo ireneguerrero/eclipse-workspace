@@ -8,4 +8,5 @@ module javafxBBDD {
 	opens ejercicio2 to javafx.graphics, javafx.fxml;
 	opens ejercicio3 to javafx.graphics, javafx.fxml;
 	opens ejercicio4 to javafx.graphics, javafx.fxml;
+	opens ejercicio1avanzado to javafx.graphics, javafx.fxml;
 }
