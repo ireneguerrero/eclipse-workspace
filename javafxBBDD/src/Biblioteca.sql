@@ -2,8 +2,8 @@ DROP DATABASE IF EXISTS biblioteca;
 CREATE DATABASE biblioteca;
 USE biblioteca;
 
-CREATE TABLE libros(
-	id INT AUTO_INCREMENT NOT NULL,
+CREATE TABLE libro(
+	id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     titulo VARCHAR(100),
     editorial VARCHAR(100),
     autor VARCHAR(100),
