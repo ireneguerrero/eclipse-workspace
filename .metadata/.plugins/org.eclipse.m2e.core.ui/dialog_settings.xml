@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\irene\eclipse-workspace\ej1avanzadosAADDXML\src\main\java\xml\ConectarXml.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\tema5interfacesAvanzadosYCSS\src\ej1\ej1.css"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\AccesoADatos\2do trimestre\oracleePrimerEjercicio\src\main\java\primerEjercicio"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\AccesoADatos\2do trimestre\oracleDAO.juan.ignacio.quintero\src\main\java\modelo"/>
@@ -16,7 +17,6 @@
 			<item value="C:\Users\irene\eclipse-workspace\combate.a.muerte.en.cenec"/>
 			<item value="C:\Users\irene\eclipse-workspace\cliente\src\main\java\clases\Cliente.java"/>
 			<item value="C:\Users\irene\eclipse-workspace\apuntes17\src\main\java\apuntes17\Main.java"/>
-			<item value="C:\Users\irene\eclipse-workspace\examen.feria.irene.guerrero\src\main\java\examen\feria\irene\guerrero\Main.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -59,6 +59,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="ej3avanzadosAADDXML"/>
+			<item value="ej2avanzadosAADDXMLLibreria"/>
+			<item value="ej2avanzadosAADDXMLVideojuegos"/>
+			<item value="ej1avanzadosAADDXML"/>
 			<item value="tema4psp"/>
 			<item value="HospitalApp"/>
 			<item value="basicosDAO"/>
@@ -70,14 +74,14 @@
 			<item value="libreConfigEj1Tri2"/>
 			<item value="libreConfiguracion2TrimestreApuntes"/>
 			<item value="tema3psp"/>
-			<item value="examen.final.psp.irene.guerrero"/>
-			<item value="examen.final.aadd.irene.guerrero"/>
-			<item value="accddraul"/>
-			<item value="interfaces.java.swing"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="ej3avanzadosAADDXML"/>
+			<item value="ej2avanzadosAADDXMLLibreria"/>
+			<item value="ej2avanzadosAADDXMLVideojuegos"/>
+			<item value="ej1avanzadosAADDXML"/>
 			<item value="tema4psp"/>
 			<item value="HospitalApp"/>
 			<item value="basicosDAO"/>
@@ -89,10 +93,6 @@
 			<item value="libreConfigEj1Tri2"/>
 			<item value="libreConfiguracion2TrimestreApuntes"/>
 			<item value="tema3psp"/>
-			<item value="examen.final.psp.irene.guerrero"/>
-			<item value="examen.final.aadd.irene.guerrero"/>
-			<item value="accddraul"/>
-			<item value="interfaces.java.swing"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
