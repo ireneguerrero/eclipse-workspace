@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="simulacropsp"/>
 			<item value="ej3avanzadosAADDXML"/>
 			<item value="ej2avanzadosAADDXMLLibreria"/>
 			<item value="ej2avanzadosAADDXMLVideojuegos"/>
@@ -73,11 +74,11 @@
 			<item value="libreConfigEj3Tri2"/>
 			<item value="libreConfigEj1Tri2"/>
 			<item value="libreConfiguracion2TrimestreApuntes"/>
-			<item value="tema3psp"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="simulacropsp"/>
 			<item value="ej3avanzadosAADDXML"/>
 			<item value="ej2avanzadosAADDXMLLibreria"/>
 			<item value="ej2avanzadosAADDXMLVideojuegos"/>
@@ -92,7 +93,6 @@
 			<item value="libreConfigEj3Tri2"/>
 			<item value="libreConfigEj1Tri2"/>
 			<item value="libreConfiguracion2TrimestreApuntes"/>
-			<item value="tema3psp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

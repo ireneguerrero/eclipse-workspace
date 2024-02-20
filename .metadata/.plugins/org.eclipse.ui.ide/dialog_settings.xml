@@ -6,6 +6,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\irene\OneDrive\Escritorio\parcial.psp"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\alvaro"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\SimulacroPSP"/>
+			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\DesarrolloDeInterfaces\2do trimestre\javafxmaven"/>
 			<item value="C:\Users\irene\OneDrive\Escritorio\-\2DAM\AccesoADatos\2do trimestre\aJavafxBBDD"/>
 			<item value="C:\Users\irene\eclipse-workspace\javafx"/>
 			<item value="C:\Users\irene\eclipse-workspace\ejercicio.tamagotchi.corregido\target\classes\META-INF\maven\ejercicio.tamagotchi.corregido\ejercicio.tamagotchi.corregido"/>
