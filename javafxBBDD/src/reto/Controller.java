@@ -49,7 +49,8 @@ public class Controller {
 		btnAñadir.setOnAction(event -> agregarLibro());
 
 		cargarEditoriales();
-		mostrarLibro();
+		mostrarRegistros();
+
 	}
 
 	private void cargarEditoriales() {
@@ -58,39 +59,26 @@ public class Controller {
 		editorialCB.setItems(FXCollections.observableArrayList(editoriales));
 	}
 
-	private void mostrarLibro() throws SQLException {
+	@FXML
+	private void mostrarRegistros() {
+
+		tituloColumn.setCellValueFactory(cellData -> cellData.getValue().tituloProperty());
+		editorialColumn.setCellValueFactory(cellData -> cellData.getValue().editorialProperty());
+		autorColumn.setCellValueFactory(cellData -> cellData.getValue().autorProperty());
+		paginasColumn.setCellValueFactory(cellData -> cellData.getValue().paginasProperty().asObject());
+
+		// Limpiar la TableView antes de cargar nuevos datos
 		tableViewLibro.getItems().clear();
 
-		List<Libro> libro = model.getAllLibros();
-
-		tableViewLibro.getItems().addAll(libro);
-	}
-
-	@FXML
-	private void agregarLibro() {
-		String titulo = tituloTF.getText();
-		String editorial = editorialCB.getValue();
-		String autor = autorTF.getText();
-		int paginas = Integer.parseInt(paginasTF.getText());
-
-		Libro nuevoLibro = new Libro(0, titulo, editorial, autor, paginas);
 		try {
-			model.agregarLibro(nuevoLibro);
+			List<Libro> libro = model.getAllLibros();
+
+			// Agrega los datos a la TableView
+			tableViewLibro.getItems().addAll(libro);
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
-		String mensaje = "Libro añadido:\n" + "Titulo: " + titulo + "\n" + "Editorial: " + editorial + "\n" + "Autor: "
-				+ autor + "\n" + "Páginas: " + paginas;
-
-		Alert alert = new Alert(Alert.AlertType.INFORMATION);
-		alert.setTitle("Libro Añadido");
-		alert.setHeaderText(null);
-		alert.setContentText(mensaje);
-		alert.showAndWait();
-
-		mostrarRegistros();
-		limpiarCampos();
 	}
 
 	private void limpiarCampos() {
@@ -101,42 +89,76 @@ public class Controller {
 	}
 
 	@FXML
-	private void borrarRegistro() {
-		String tituloLibro = tituloTF.getText();
+	private void agregarLibro() {
+
 		try {
-			model.borrarRegistro(tituloLibro);
+			String titulo = tituloTF.getText();
+			String editorial = editorialCB.getValue();
+			String autor = autorTF.getText();
+			int paginas = Integer.parseInt(paginasTF.getText());
+
+			Libro nuevoLibro = new Libro(0, titulo, editorial, autor, paginas);
+			model.agregarLibro(nuevoLibro);
+			String mensaje = "Libro añadido:\n" + "Titulo: " + titulo + "\n" + "Editorial: " + editorial + "\n"
+					+ "Autor: " + autor + "\n" + "Páginas: " + paginas;
+
 			Alert alert = new Alert(Alert.AlertType.INFORMATION);
-			alert.setTitle("Libro borrado");
+			alert.setTitle("Libro Añadido");
 			alert.setHeaderText(null);
-			alert.setContentText("Has borrado el libro " + tituloLibro);
+			alert.setContentText(mensaje);
 			alert.showAndWait();
+
+			mostrarRegistros();
+			limpiarCampos();
+
 		} catch (SQLException e) {
-			e.printStackTrace();
+			Alert alert = new Alert(Alert.AlertType.ERROR);
+			alert.setTitle("Error al añadir libro");
+			alert.setHeaderText("Error");
+			alert.setContentText(
+					"Has dejado algún campo sin rellenar o le has dado un valor inválido como escribir el número de páginas con letras");
+			alert.showAndWait();
+
+		} catch (NumberFormatException i) {
+			Alert alert = new Alert(Alert.AlertType.ERROR);
+			alert.setTitle("Error al añadir libro");
+			alert.setHeaderText("Error");
+			alert.setContentText(
+					"Has dejado algún campo sin rellenar o le has dado un valor inválido como escribir el número de páginas con letras");
+			alert.showAndWait();
+
 		}
-		limpiarCampos();
+
 	}
-	
+
 	@FXML
-    private void mostrarRegistros() {
+	private void borrarFilaSeleccionada() {
+		Libro libroSeleccionado = tableViewLibro.getSelectionModel().getSelectedItem();
 
-        tituloColumn.setCellValueFactory(cellData -> cellData.getValue().tituloProperty());
-        editorialColumn.setCellValueFactory(cellData -> cellData.getValue().editorialProperty());
-        autorColumn.setCellValueFactory(cellData -> cellData.getValue().autorProperty());
-        paginasColumn.setCellValueFactory(cellData -> cellData.getValue().paginasProperty().asObject());
+		if (libroSeleccionado != null) {
+			try {
+				model.borrarRegistro(libroSeleccionado.getTitulo());
 
-        // Limpiar la TableView antes de cargar nuevos datos
-        tableViewLibro.getItems().clear();
+				tableViewLibro.getItems().remove(libroSeleccionado);
 
-        try {
-            List<Libro> libro = model.getAllLibros();
+				limpiarCampos();
 
-            // Agrega los datos a la TableView
-            tableViewLibro.getItems().addAll(libro);
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } // catch
-    } // fun
+				Alert alert = new Alert(Alert.AlertType.INFORMATION);
+				alert.setTitle("Libro borrado");
+				alert.setHeaderText(null);
+				alert.setContentText("Se ha borrado el libro seleccionado");
+				alert.showAndWait();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		} else {
+			Alert alert = new Alert(Alert.AlertType.WARNING);
+			alert.setTitle("Error al borrar el libro");
+			alert.setHeaderText(null);
+			alert.setContentText("Por favor, selecciona un libro para borrar");
+			alert.showAndWait();
+		}
+	}
 
 	@FXML
 	private void cerrarConexion() {
