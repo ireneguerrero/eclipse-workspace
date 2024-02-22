@@ -15,7 +15,7 @@ public class QueryXml {
 	private static String COLLECTION = "videojuegos";
 
 	// Nombre del recurso XML dentro de la colección
-	private static String RESOURCE = "videojuegos.xml";
+	private static String RESOURCE = "videojuegos";
 
 	public static void main(String args[]) throws Exception {
 
