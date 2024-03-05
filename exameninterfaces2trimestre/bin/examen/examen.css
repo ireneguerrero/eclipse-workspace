@@ -1,0 +1,17 @@
+.label {
+    -fx-font-weight: bold;
+     -fx-text-fill: #E26EE5;
+}
+.root {
+-fx-background-color: #F3CCF3;
+
+
+}
+.button {
+    -fx-background-color:#E26EE5;
+    -fx-text-fill: #FFFFFF;
+}
+
+.tableview{
+	-fx-background-color:#BC7AF9;
+}
