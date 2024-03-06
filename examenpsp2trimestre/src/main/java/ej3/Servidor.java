@@ -16,7 +16,7 @@ public class Servidor {
 	public static void main(String[] args) {
 		ServerSocket servidor = null;
 		Socket cliente = null;
-		int puerto = 6000;
+		int puerto = 6001;
 
 		try {
 			servidor = new ServerSocket(puerto);

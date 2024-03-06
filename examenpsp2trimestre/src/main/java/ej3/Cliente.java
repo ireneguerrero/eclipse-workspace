@@ -18,7 +18,7 @@ public class Cliente {
 		Scanner sc = new Scanner(System.in);
 		Pokemon pokemon = new Pokemon("Haunter",80,20,30);
 		try {
-			cliente = new Socket("localhost", 6000);
+			cliente = new Socket("localhost", 6001);
 
 			InputStream input = cliente.getInputStream(); // Recibe entrada de bajo nivel
 			ObjectInputStream ois = new ObjectInputStream(input); // Transforma ese bajo nivel en proceso
